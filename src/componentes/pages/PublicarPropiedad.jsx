@@ -26,6 +26,7 @@ const styledButton = {
 const PublicarPropiedad = () => {
   return (
     <div style={{ backgroundColor: "#939d91" }}>
+      <div className="naa"></div>
       <Container style={backgroundColor}>
         <Row>
           <Col>

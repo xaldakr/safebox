@@ -5,6 +5,7 @@ import Login from "./componentes/pages/login";
 import Signup from "./componentes/pages/singup";
 import Navbarra from "./componentes/secciones/Navbarra";
 import Home from "./componentes/home/Home";
+import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="login" element={<Login />} />
-        <Route path="login/register" element={<Signup />} />
+        <Route path="register" element={<Signup />} />
+        <Route path="publish" element={<PublicarPropiedad />} />
       </Routes>
     </div>
   );

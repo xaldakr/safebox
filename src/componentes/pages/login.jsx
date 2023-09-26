@@ -59,15 +59,17 @@ const Login = () => {
                         Olvide mi contraseña
                       </a>
                       <br />
-                      <Link to="register">
+                      <Link to="../register">
                         <a className="lost" href="">
                           No tengo cuenta || Crear cuenta
                         </a>
                       </Link>
                     </div>
-                    <button type="submit" className="btn btn-success w-100">
-                      <strong>Iniciar sesión</strong>
-                    </button>
+                    <Link to="../publish">
+                      <button type="submit" className="btn btn-success w-100">
+                        <strong>Iniciar sesión</strong>
+                      </button>
+                    </Link>
                   </form>
                 </div>
               </div>
