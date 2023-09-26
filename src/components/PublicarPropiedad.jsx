@@ -1,6 +1,6 @@
 import React from "react";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import { Container, Row, Col, Form, InputGroup } from "react-bootstrap";
+import { Container, Row, Col, Form, InputGroup, Button } from "react-bootstrap";
 
 //estilos personalizados para la sección de Publicar y editar propiedad
 const backgroundColor = {
@@ -12,6 +12,15 @@ const ShowImages = {
   width: "100%",
   height: "100%",
   marginBottom: "5%",
+};
+const RadioBG = {
+  backgroundColor: "#939D91",
+  height: "50px",
+};
+const styledButton = {
+  backgroundColor: "#CFC0BD",
+  color: "#2A605A",
+  border: "3px solid #2A605A",
 };
 
 const PublicarPropiedad = () => {
@@ -180,6 +189,145 @@ const PublicarPropiedad = () => {
                 />
               </InputGroup>
             </Form>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h2 className="mt-4">AGENDAR VISITA A LA PROPIEDAD</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center">
+            <h2>ELEGIR DIAS DE DISPONIBILIDAD</h2>
+            <Form className="mt-5 " style={RadioBG}>
+              {" "}
+              <div key={`inline-radio`} className="mb-3">
+                <Form.Check
+                  inline
+                  label="L"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-1`}
+                />
+                <Form.Check
+                  inline
+                  label="M"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-2`}
+                />
+                <Form.Check
+                  inline
+                  label="X"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-3`}
+                />
+                <Form.Check
+                  inline
+                  label="J"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-4`}
+                />
+                <Form.Check
+                  inline
+                  label="V"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-5`}
+                />
+                <Form.Check
+                  inline
+                  label="S"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-6`}
+                />
+                <Form.Check
+                  inline
+                  label="D"
+                  name="group1"
+                  type="checkbox"
+                  id={`inline-checkbox-7`}
+                />
+              </div>
+            </Form>
+            <Button style={styledButton} className="mt-5 mb-5">
+              GUARDAR DATOS DE PROPIEDAD
+            </Button>
+          </Col>
+          <Col>
+            <h2 className="text-center">ELIGE LA HORA</h2>
+            <Form>
+              <Row className="mb-4">
+                <Col>
+                  <Form.Select>
+                    <option>Hora Inicio</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </Form.Select>
+                </Col>
+                <Col>
+                  <Form.Select>
+                    <option>Minutos</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </Form.Select>
+                </Col>
+                <Col>
+                  <Form.Select>
+                    <option value="am">Am</option>{" "}
+                    <option value="pm">Pm</option>
+                  </Form.Select>
+                </Col>
+              </Row>
+              <Row className="mb-4">
+                <Col>
+                  <Form.Select>
+                    <option>Hora Fin</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </Form.Select>
+                </Col>
+                <Col>
+                  <Form.Select>
+                    <option>Minutos</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </Form.Select>
+                </Col>
+                <Col>
+                  <Form.Select>
+                    <option value="am">Am</option>{" "}
+                    <option value="pm">Pm</option>
+                  </Form.Select>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Form.Check
+                    inline
+                    label="Permitir múltiples visitantes"
+                    name="group1"
+                    type="checkbox"
+                    id={`inline-checkbox-1`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Definir un tiempo de visita máximo"
+                    name="group1"
+                    type="checkbox"
+                    id={`inline-checkbox-2`}
+                  />
+                </Col>
+              </Row>
+            </Form>
+            <h3 className="text-center">Duración 0 Minutos</h3>
           </Col>
         </Row>
       </Container>
