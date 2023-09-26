@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body {
+  overflow-x: hidden;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -45,6 +47,9 @@
 }
 .bglime {
   background-color: #7f8d84;
+}
+.bgdark {
+  background-color: #0101017e;
 }
 .nava {
   background-color: #2a605a;
