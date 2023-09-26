@@ -10,7 +10,11 @@ import {
 } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDown,
+  faArrowUp,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 export const Explorar = () => {
   return (
     <div>
@@ -40,10 +44,7 @@ export const Explorar = () => {
               <h5 className=" text-black ">
                 <b>Departamento</b>
               </h5>
-              <Form.Select
-                aria-label="Default select example"
-                className="bglime"
-              >
+              <Form.Select aria-label="Depas" className="bglime">
                 <option>San Salvador</option>
                 <option value="1">Santa Ana</option>
                 <option value="2">La Libertad</option>
@@ -157,6 +158,66 @@ export const Explorar = () => {
                   className="bglime text-end"
                 />
               </InputGroup>
+
+              <hr className="grueso" />
+
+              <Row>
+                <Col>
+                  <h5 className=" text-black ">
+                    <b>Garage </b>
+                  </h5>
+                  <InputGroup className="mb-3 bglime">
+                    <InputGroup.Text className="bglime">N°</InputGroup.Text>
+
+                    <Form.Control
+                      type="number"
+                      placeholder=""
+                      step={1}
+                      min={0}
+                      max={20}
+                      className="bglime"
+                    />
+                  </InputGroup>
+                </Col>
+                <Col>
+                  <h5 className=" text-black text-end">
+                    <b>Patios</b>
+                  </h5>
+                  <InputGroup className="mb-3 bglime">
+                    <InputGroup.Text className="bglime">N°</InputGroup.Text>
+
+                    <Form.Control
+                      type="number"
+                      placeholder=""
+                      step={1}
+                      min={0}
+                      max={20}
+                      className="bglime"
+                    />
+                  </InputGroup>
+                </Col>
+              </Row>
+
+              <hr className="grueso" />
+
+              <h3 className=" text-black text-start">
+                <b>Ordenar Por</b>
+              </h3>
+              <Form.Select aria-label="Orden" className="bglime">
+                <option>Precio ↑</option>
+                <option value="1">Precio ↓</option>
+                <option value="2">Extensión ↑</option>
+                <option value="3">Extensión ↓</option>
+                <option value="4">Habitaciones ↑</option>
+                <option value="5">Habitaciones ↓</option>
+                <option value="6">Baños ↑</option>
+                <option value="7">Baños ↓</option>
+                <option value="8">Garage ↑</option>
+                <option value="9">Garage ↓</option>
+                <option value="10">Patios ↑</option>
+                <option value="11">Patios ↓</option>
+              </Form.Select>
+              <br />
             </Form>
           </Col>
           {/*Zona de Publicaciones*/}
