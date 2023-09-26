@@ -1,34 +1,40 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
-
+import "../../style/ayuda.css";
 const Ayuda = () => {
   return (
-    <Accordion defaultActiveKey={["0"]} alwaysOpen>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+    <div className="fondo">
+      <div className="container mt-5">
+        <div className="accordion" id="faqAccordion">
+          <h1>Preguntas Frecuentes</h1>
+          <Accordion defaultActiveKey="0" className="mi-accordion">
+            {/* Pregunta 1 */}
+            <Accordion.Item className="itemc" eventKey="0">
+              <Accordion.Header
+                style={{ backgroundColor: "#2a605a", color: "#FFFFFF" }}
+                className="mi-header"
+              >
+                ¿Como iniciar sesión?
+              </Accordion.Header>
+              <Accordion.Body className="mi-body">
+                En la parte superior derecha encontraras el boton de inicar
+                sesión.
+              </Accordion.Body>
+            </Accordion.Item>
+            {/* Pregunta 2 */}
+            <Accordion.Item eventKey="1">
+              <Accordion.Header className="mi-header">
+                ¿Como utilizar la barra de busqueda?
+              </Accordion.Header>
+              <Accordion.Body className="mi-body">
+                En la barra de busqueda puedes poner el nombre de la propiedad.
+              </Accordion.Body>
+            </Accordion.Item>
+            {/* Agregar más preguntas y respuestas aquí */}
+          </Accordion>
+        </div>
+      </div>
+    </div>
   );
 };
 
