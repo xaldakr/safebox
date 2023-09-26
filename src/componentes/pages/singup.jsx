@@ -30,8 +30,8 @@ const Registrarse = () => {
   };
 
   return (
-    <div className="fondo">
-      <div className="container">
+    <div className="fondo contiene">
+      <div className="container ">
         <div className="row justify-content-center align-items-center no-margin ">
           <div className="col-md-4">
             {/* Contenido de la columna izquierda */}
@@ -148,7 +148,7 @@ const Registrarse = () => {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-success">
+              <button type="submit" className="btn btn-success w-100">
                 Registrarse
               </button>
             </form>

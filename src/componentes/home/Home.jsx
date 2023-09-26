@@ -3,7 +3,7 @@ import { Container, Row, Col, Carousel, Button, Card } from "react-bootstrap";
 import "./Home.css";
 import img1 from "./media/casa1.jpg";
 import img2 from "./media/casa2.jpg";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="bgwhite">
@@ -59,15 +59,17 @@ function Home() {
                 placeholder="Buscar..."
                 className="form-control custom-input-small mb-2 w-100" // Añade una clase para el estilo personalizado
               />
-              <Button
-                style={{
-                  backgroundColor: "#EBEBEB",
-                  color: "#2A605A",
-                  height: "9vh",
-                }}
-              >
-                EXPLORAR
-              </Button>
+              <Link to="/explore">
+                <Button
+                  style={{
+                    backgroundColor: "#EBEBEB",
+                    color: "#2A605A",
+                    height: "9vh",
+                  }}
+                >
+                  EXPLORAR
+                </Button>
+              </Link>
             </div>
           </Col>
         </Row>

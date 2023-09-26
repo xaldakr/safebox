@@ -94,3 +94,18 @@ body {
 .grandtxt2 {
   font-size: 3vw;
 }
+.carda {
+  height: 40%;
+}
+.stick {
+  overflow-y: auto;
+}
+.noy {
+  overflow-y: hidden;
+}
+.nox {
+  overflow-x: hidden;
+}
+.nobg {
+  background-color: #00000000;
+}
