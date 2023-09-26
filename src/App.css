@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.bggreen {
+  background-color: #2a605a;
+}
+.bgmoss {
+  background-color: #586f6b;
+}
+.bglime {
+  background-color: #7f8d84;
+}
+.nava {
+  background-color: #2a605a;
+}
+.naa {
+  height: 9.5vh;
+}
+.grueso {
+  border-width: 3px;
+  color: black;
+}
+.navaitem {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.navaitem h1,
+.grandtxt {
+  font-size: 6vh;
+  color: #cfc0bd;
+}
+.navaitem img {
+  height: 7vh;
+}
+.titulo {
+  font-family: "Fjalla One", sans-serif;
+}
+.normaltxt {
+  font-family: "Lato", sans-serif;
+}
+.spacecontrol {
+  height: 90vh;
+}
+.whitetxt {
+  color: #cfc0bd;
+}
+.grandtxt2 {
+  font-size: 3vw;
+}
