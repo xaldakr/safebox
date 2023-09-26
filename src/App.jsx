@@ -6,6 +6,7 @@ import Signup from "./componentes/pages/singup";
 import Navbarra from "./componentes/secciones/Navbarra";
 import Home from "./componentes/home/Home";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
+import CustomFooter from "./componentes/home/footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="register" element={<Signup />} />
         <Route path="publish" element={<PublicarPropiedad />} />
       </Routes>
+      <CustomFooter />
     </div>
   );
 }
