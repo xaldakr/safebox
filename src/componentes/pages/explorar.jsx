@@ -31,10 +31,10 @@ export const Explorar = () => {
                 </h1>
               </Col>
               <Col md={4} xl={3} className=" justify-content-end pe-3">
-                <Button className="bgmoss btn-outline-success text-end">
+                <Button className="bgmoss btn-outline-success text-end ">
                   <FontAwesomeIcon
                     icon={faSearch}
-                    className="whitetxt text-end grandtxt2"
+                    className="whitetxt text-end grandtxt2 text-black"
                   />
                 </Button>
               </Col>
