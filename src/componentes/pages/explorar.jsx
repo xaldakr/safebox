@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
+import { CartaPropi } from "../secciones/cartapropi";
 import {
-  Row,
   Col,
   Container,
   Button,
   Form,
   FloatingLabel,
+  Row,
 } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +16,8 @@ import {
   faArrowUp,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import * as datos from "../secciones/staticdata";
+
 export const Explorar = () => {
   return (
     <div>
@@ -31,7 +34,7 @@ export const Explorar = () => {
                 </h1>
               </Col>
               <Col md={4} xl={3} className=" justify-content-end pe-3">
-                <Button className="bgmoss btn-outline-success text-end ">
+                <Button className="bgmoss btn-outline-success text-end w-100 h-100">
                   <FontAwesomeIcon
                     icon={faSearch}
                     className="whitetxt text-end grandtxt2 text-black"
@@ -221,7 +224,10 @@ export const Explorar = () => {
             </Form>
           </Col>
           {/*Zona de Publicaciones*/}
-          <Col md={8} xl={9}></Col>
+          <Col md={8} xl={9}>
+            <CartaPropi data={datos.publi1} />
+            <CartaPropi data={datos.publi2} />
+          </Col>
         </Row>
       </div>
     </div>
