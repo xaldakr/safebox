@@ -58,7 +58,7 @@ const Login = () => {
                       Olvide mi contraseña
                     </a>
                   </div>
-                  <button type="submit" className="btn">
+                  <button type="submit" className="btn btn-success">
                     <strong>Iniciar sesión</strong>
                   </button>
                 </form>
