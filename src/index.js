@@ -9,7 +9,6 @@ import App from "./App";
 
 //import AYUDA from "./componentes/pages/ayuda";
 
-import reportWebVitals from "./reportWebVitals";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
