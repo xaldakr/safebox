@@ -1,0 +1,33 @@
+.custom-navbar-bg {
+  background-color: #2A605A;
+}
+
+.custom-navbar-bg .navbar-brand,
+.custom-navbar-bg .nav-link {
+  color: #CFC0BD;
+}
+
+/* Estilo para mover el logotipo y el texto hacia la izquierda */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.logo {
+  margin-right: 0px; 
+}
+
+.safebox-text {
+  font-size: 28px; 
+}
+
+.navbar .navbar-nav .nav-link.navbar-link {
+  font-size: 13px; 
+}
+
+.avatar-icon {
+  margin-right: 5px; 
+}
+

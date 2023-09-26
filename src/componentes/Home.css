@@ -1,0 +1,87 @@
+/* Estilos CSS en Home.css */
+.carousel-fullwidth {
+  max-height: 775px !important; 
+  overflow: hidden; 
+}
+
+.carousel-fullwidth .carousel-inner {
+  max-height: 100% !important; 
+}
+
+.carousel-fullwidth img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.split-content {
+  background-color: #586F6B; 
+  padding: 10px;
+}
+
+.split-content h1 {
+  text-align: center;
+  margin-top: 170px; 
+}
+
+.search-box {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.btn {
+  margin-top: 3%;
+  width: 20%; 
+}
+.custom-input-small {
+  width: 60%; 
+  padding: 5px; 
+  font-size: 12px; 
+  background-color: #B8B8AA; 
+}
+/*cards*/
+/* Estilos CSS en Home.css */
+.custom-card {
+  background-color: #2f3328 !important;
+  color: #fff !important;
+}
+
+.custom-button {
+  background-color: #CFC0BD !important;
+  color: #586F6B !important;
+  border: none !important;
+  width: 100%;
+}
+
+.custom-button:focus {
+  outline: none !important;
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 83%; /* Alinea verticalmente al centro */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Alinea verticalmente al centro */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: #fff; /* Texto en blanco */
+  padding: 10px; /* Espaciado interno */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+.custom-ver-button {
+  background-color: #FF0000; /* Cambia este valor al color que desees */
+  color: #FFFFFF; /* Color del texto */
+}
+.custom-h1 {
+  color: #EBEBEB; 
+}
+
+
+
+
+
+
+  
