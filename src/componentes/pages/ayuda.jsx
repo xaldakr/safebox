@@ -1,66 +1,34 @@
 import React from "react";
+import Accordion from "react-bootstrap/Accordion";
 
 const Ayuda = () => {
   return (
-    <div className="container mt-5">
-      <h1>Preguntas Frecuentes</h1>
-      <div className="accordion" id="faqAccordion">
-        {/* Pregunta 1 */}
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="faqHeading1">
-            <button
-              className="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faqCollapse1"
-              aria-expanded="true"
-              aria-controls="faqCollapse1"
-            >
-              Pregunta 1: ¿Cómo puedo comprar una propiedad?
-            </button>
-          </h2>
-          <div
-            id="faqCollapse1"
-            className="accordion-collapse collapse show"
-            aria-labelledby="faqHeading1"
-            data-bs-parent="#faqAccordion"
-          >
-            <div className="accordion-body">
-              Respuesta 1: Para comprar una propiedad, debes...
-            </div>
-          </div>
-        </div>
-
-        {/* Pregunta 2 */}
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="faqHeading2">
-            <button
-              className="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faqCollapse2"
-              aria-expanded="false"
-              aria-controls="faqCollapse2"
-            >
-              Pregunta 2: ¿Qué tipos de propiedades ofrecen?
-            </button>
-          </h2>
-          <div
-            id="faqCollapse2"
-            className="accordion-collapse collapse"
-            aria-labelledby="faqHeading2"
-            data-bs-parent="#faqAccordion"
-          >
-            <div className="accordion-body">
-              Respuesta 2: Ofrecemos una variedad de propiedades, como casas,
-              apartamentos, y más...
-            </div>
-          </div>
-        </div>
-
-        {/* Agregar más preguntas y respuestas aquí */}
-      </div>
-    </div>
+    <Accordion defaultActiveKey={["0"]} alwaysOpen>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
   );
 };
 
