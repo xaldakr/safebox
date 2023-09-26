@@ -75,12 +75,14 @@ function Navbarra(props) {
                   aria-describedby="basic-addon2"
                 />
                 <div className="input-group-append">
-                  <button
-                    className="btn bgreen border border-1 border-black whitetxt"
-                    type="button"
-                  >
-                    Explorar
-                  </button>
+                  <Link to="explore">
+                    <button
+                      className="btn bgreen border border-1 border-black whitetxt w-100"
+                      type="button"
+                    >
+                      Explorar
+                    </button>
+                  </Link>
                 </div>
               </InputGroup>
             )}

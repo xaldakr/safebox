@@ -1,5 +1,7 @@
+import img1 from "../../multimedia/images/estaticos/general/casa1.jpeg";
+import img2 from "../../multimedia/images/estaticos/general/casa4.jpeg";
 export const publi1 = {
-  id: 1,
+  id: img1,
   titulo: "Vendo casa en jardín loma alta, Santa Ana",
   desc: "Vendo casa en buen estado, 5 años de construcción, bajo terreno firme y con los papeles en regla, el motivo de la venta es para poder conseguir una casa en Costa Rica, motivos de mudanza, precio fijo, aunque poco negociable",
   precio: 240000,
@@ -16,7 +18,7 @@ export const publi1 = {
   patio: 2,
 };
 export const publi2 = {
-  id: 2,
+  id: img2,
   titulo: "Vendo casa en la campanera, solo interesados, sean serios",
   desc: "Vendo casa en buena bonita y barata, no se que tiene pero no funciona el agua, inundada, lo que ven es, el precio es fijo, no sean mañosos, lo quiero vender porque necesito vicio, ya no tengo más.",
   precio: 10000,

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { CartaPropi } from "../secciones/cartapropi";
+import Pagination from "react-bootstrap/Pagination";
 import {
   Col,
   Container,
@@ -20,12 +21,12 @@ import * as datos from "../secciones/staticdata";
 
 export const Explorar = () => {
   return (
-    <div>
+    <div className=" nox">
       <div className="naa"></div>
       <div className="spacecontrol">
         <Row>
           {/*Zona de Controles*/}
-          <Col md={4} xl={3} className="bgmoss">
+          <Col md={4} xl={3} className="bgmoss ">
             <br />
             <Row className="">
               <Col md={8} xl={9}>
@@ -220,13 +221,36 @@ export const Explorar = () => {
                 <option value="10">Patios ↑</option>
                 <option value="11">Patios ↓</option>
               </Form.Select>
-              <br />
             </Form>
           </Col>
           {/*Zona de Publicaciones*/}
-          <Col md={8} xl={9}>
-            <CartaPropi data={datos.publi1} />
-            <CartaPropi data={datos.publi2} />
+          <Col md={8} xl={9} className="bglime stick">
+            <br />
+            <div className="carda">
+              <CartaPropi data={datos.publi1} />
+            </div>
+            <br />
+            <div className="carda">
+              <CartaPropi data={datos.publi2} />
+            </div>
+            <br />
+            <Pagination className="w-100 justify-content-center">
+              <Pagination.First />
+              <Pagination.Prev />
+              <Pagination.Item>{1}</Pagination.Item>
+              <Pagination.Ellipsis />
+
+              <Pagination.Item>{10}</Pagination.Item>
+              <Pagination.Item>{11}</Pagination.Item>
+              <Pagination.Item active>{12}</Pagination.Item>
+              <Pagination.Item>{13}</Pagination.Item>
+              <Pagination.Item disabled>{14}</Pagination.Item>
+
+              <Pagination.Ellipsis />
+              <Pagination.Item>{20}</Pagination.Item>
+              <Pagination.Next />
+              <Pagination.Last />
+            </Pagination>
           </Col>
         </Row>
       </div>

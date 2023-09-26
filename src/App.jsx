@@ -9,10 +9,12 @@ import Home from "./componentes/home/Home";
 function App() {
   return (
     <div className="App">
-      <Navbarra data={true} />
+      <Navbarra data={false} />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="explore" element={<Explorar />} />
+        <Route path="login" element={<Login />} />
+        <Route path="login/register" element={<Signup />} />
       </Routes>
     </div>
   );

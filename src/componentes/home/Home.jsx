@@ -59,7 +59,7 @@ function Home() {
                 placeholder="Buscar..."
                 className="form-control custom-input-small mb-2 w-100" // Añade una clase para el estilo personalizado
               />
-              <Link to="explore">
+              <Link to="/explore">
                 <Button
                   style={{
                     backgroundColor: "#EBEBEB",
