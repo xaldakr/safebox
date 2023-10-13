@@ -21,12 +21,6 @@ const styledButton = {
   color: "#2A605A",
   border: "3px solid #2A605A",
 };
-const styledButton = {
-  width: "100%",
-  backgroundColor: "#CFC0BD",
-  color: "#2A605A",
-  border: "3px solid #2A605A",
-};
 
 export const VistaPropiedad = () => {
   return (
