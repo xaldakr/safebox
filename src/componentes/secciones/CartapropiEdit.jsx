@@ -80,7 +80,7 @@ export function CartaPropiEdit(props) {
                 </h1>
               </Col>
               <Col md={4} xl={3} className=" justify-content-end pe-3">
-                <Link to="/publish">
+                <Link to="/edit">
                   <button className="bgmoss  text-center  rounded rounded-pill p-4 float-end">
                     <h1>
                       <FontAwesomeIcon
