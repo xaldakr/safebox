@@ -3,19 +3,74 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import {
+  faTwitter,
+  faFacebook,
+  faYoutube,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function CustomFooter() {
   return (
     <footer
       className="custom-footer py-1"
-      style={{ backgroundColor: "#586F6B" }}
+      style={{ backgroundColor: "#2a605a" }}
     >
       <Container>
-        <Row className="justify-content-center">
+        <br />
+        <Row className="justify-content-center whitetxt">
+          <Col md={3}>
+            <a
+              href="https://youtu.be/sLVBCeZ7NjQ?si=ov7x038BS0XCC1e_"
+              className="nodecoa"
+            >
+              <h4>
+                <FontAwesomeIcon icon={faFacebook} /> Facebook
+              </h4>
+            </a>
+          </Col>
+          <Col md={3}>
+            <a
+              href="https://youtu.be/sLVBCeZ7NjQ?si=ov7x038BS0XCC1e_"
+              className="nodecoa"
+            >
+              <h4>
+                <FontAwesomeIcon icon={faYoutube} /> Youtube
+              </h4>
+            </a>
+          </Col>
+          <Col md={3}>
+            <a
+              href="https://youtu.be/sLVBCeZ7NjQ?si=ov7x038BS0XCC1e_"
+              className="nodecoa"
+            >
+              <h4>
+                <FontAwesomeIcon icon={faInstagram} /> Instagram
+              </h4>
+            </a>
+          </Col>
+          <Col md={3}>
+            <a
+              href="https://youtu.be/sLVBCeZ7NjQ?si=ov7x038BS0XCC1e_"
+              className="nodecoa"
+            >
+              <h4>
+                <FontAwesomeIcon icon={faTwitter} /> Twitter
+              </h4>
+            </a>
+          </Col>
+        </Row>
+        <hr />
+        <Row>
           {" "}
           {/* Agrega la clase para centrar horizontalmente */}
-          <Col md={2}>
-            <h5 className="mb-8">NUESTROS NOMBRES</h5>
+          <Col md={4}>
+            <h2 className="mb-8 whitetxt">
+              &copy; SAFEBOX, 2023. <br /> All rights reserved.
+            </h2>
+          </Col>
+          <Col md={4}>
             <ul className="list-unstyled">
               <li>
                 <a href="/" className="text-light text-decoration-none">
@@ -39,8 +94,7 @@ function CustomFooter() {
               </li>
             </ul>
           </Col>
-          <Col md={2}>
-            <h5 className="mb-8">ACCIONES</h5>
+          <Col md={4}>
             <ul className="list-unstyled">
               <li>
                 <a href="/" className="text-light text-decoration-none">
@@ -64,20 +118,8 @@ function CustomFooter() {
               </li>
             </ul>
           </Col>
-          <Col md={2}>
-            <h5 className="mb-8">REDES SOCIALES</h5>
-            <Button variant="primary" className="mb-3 d-block w-100">
-              <i className="fab fa-facebook-f"></i> Facebook
-            </Button>
-            <Button variant="info" className="d-block w-100">
-              <i className="fab fa-twitter"></i> Twitter
-            </Button>
-          </Col>
         </Row>
       </Container>
-      <div className="text-center mt-4">
-        &copy; SAFEBOX, 2023. All rights reserved.
-      </div>
     </footer>
   );
 }

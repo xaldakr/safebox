@@ -7,12 +7,11 @@ import { Button, Collapse, Row, Badge } from "react-bootstrap";
 const Carta = () => {
   // Define tus propios valores para la tarjeta
   const imagen = img2;
-  const tipo = "Venta";
+  const tipo = "$230,000";
   const titulo = "Vendo casa en colonia san benito";
   const desc = "Descripción creativa para esta tarjeta";
-  const fecha = "1/10/2023";
+  const fecha = "Santa Ana";
   const lin = "/ruta/para/ver/mas";
-  const tamano = "col-md-4";
 
   const [open, setOpen] = useState(false);
 
@@ -26,7 +25,7 @@ const Carta = () => {
 
   return (
     <Card
-      className={` tamano${tamano} bgred rounded-0 border border-3 border-danger p-0 m-0 w-200${
+      className={` bgred rounded-0 border border-3 border-success p-0 m-0 w-200${
         open ? "hovered" : ""
       }`}
       onMouseEnter={handleMouseEnter}
@@ -35,8 +34,8 @@ const Carta = () => {
       aria-expanded={open}
     >
       <Card.Img src={imagen} alt={titulo} className="img-fluid w-100 h-600" />
-      <Card.ImgOverlay className="fwhite d-flex flex-column justify-content-end m-0 p-0">
-        <Row className="bgpurpleop m-0 w-100 p-4">
+      <Card.ImgOverlay className="fwhite d-flex flex-column justify-content-end m-0 p-0 ">
+        <Row className="bgpurpleop m-0 w-100 p-4 fondocontener2">
           <Card.Title>
             {" "}
             <h3>
@@ -49,7 +48,7 @@ const Carta = () => {
           </Card.Title>
           <br />
           <hr />
-          <Collapse in={open}>
+          <Collapse in={open} className="">
             <div id="cartacolapso">
               <Card.Text>
                 {" "}
@@ -61,7 +60,7 @@ const Carta = () => {
               <Button
                 as={Link}
                 to={lin}
-                variant="outline-danger"
+                variant="outline-success"
                 className="bgred"
               >
                 <h5>Ver más...</h5>
@@ -75,4 +74,3 @@ const Carta = () => {
 };
 
 export default Carta;
-

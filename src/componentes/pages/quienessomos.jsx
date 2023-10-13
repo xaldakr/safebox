@@ -11,9 +11,11 @@ function QuienesSomos() {
       </video>
       <div className="quienes-somos-overlay"></div>
       <div className="quienes-somos-content">
-        <h2 className="h77" style={{ textAlign: "left" }}>
+
+        <h1 className="h77" style={{ textAlign: "left" }}>
           QUIENES SOMOS
-        </h2>
+        </h1>
+
         <div className="parrafos-container">
           <div className="parrafoq">
             <p>

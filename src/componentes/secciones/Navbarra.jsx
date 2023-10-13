@@ -17,10 +17,11 @@ import {
   faBook,
   faSearch,
   faX,
-  faExclamationCircle,
+  faHouseChimneyWindow,
   faUser,
   faBell,
   faCalendar,
+  faHouseChimneyUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faDiscord,
@@ -60,45 +61,24 @@ function Navbarra(props) {
               </Nav.Link>
             </Nav>
           </Col>
-          <Col lg={4} className="justify-content-end align-items-start ps-5">
-            {islogged && (
-              <InputGroup>
-                <InputGroup.Text className="bggreen whitetxt border border-1 border-black">
-                  <FontAwesomeIcon icon={faSearch} />
-                </InputGroup.Text>
 
-                <input
-                  type="text"
-                  className="form-control bggreen whitetxt border border-1 border-black"
-                  placeholder="Busca propiedades"
-                  aria-label="Buscar"
-                  aria-describedby="basic-addon2"
-                />
-                <div className="input-group-append">
-                  <Link to="explore">
-                    <button
-                      className="btn bgreen border border-1 border-black whitetxt w-100"
-                      type="button"
-                    >
-                      Explorar
-                    </button>
-                  </Link>
-                </div>
-              </InputGroup>
-            )}
-          </Col>
-          <Col lg={4} className="justify-content-between align-items-center">
+          <Col lg={8} className="justify-content-between align-items-center">
             <Nav className="justify-content-end w-100 align-items-center">
               {islogged ? (
                 <>
                   <Nav.Link as={Link} to="notif" className="d-inline">
                     <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
-                      <FontAwesomeIcon icon={faBell} />
+                      <FontAwesomeIcon icon={faBell} />{" "}
+                      <b className="d-none d-xl-inline-block">Notificaciones</b>
                     </h2>
                   </Nav.Link>
                   <Nav.Link as={Link} to="Notificaciones" className="d-inline">
                     <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
-                      <FontAwesomeIcon icon={faCalendar} />
+                      <FontAwesomeIcon icon={faHouseChimneyWindow} />
+                      <b className="d-none d-xl-inline-block">
+                        {" "}
+                        Mis Propiedades
+                      </b>
                     </h2>
                   </Nav.Link>
                   <Nav.Link as={Link} to="properties" className="d-inline">

@@ -54,7 +54,7 @@
 
 .carousel-caption-custom {
   position: absolute;
-  top: 83%; /* Alinea verticalmente al centro */
+  top: 87%; /* Alinea verticalmente al centro */
   left: 0;
   right: 0;
   transform: translateY(-50%); /* Alinea verticalmente al centro */
@@ -74,4 +74,3 @@
 .custom-h1 {
   color: #ebebeb;
 }
-
