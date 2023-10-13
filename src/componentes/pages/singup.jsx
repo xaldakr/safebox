@@ -30,9 +30,9 @@ const Registrarse = () => {
   };
 
   return (
-    <div className="fondo contiene">
+    <div className="fondo h-100">
       <div className="container ">
-        <div className="row justify-content-center align-items-center no-margin ">
+        <div className="row justify-content-center align-items-center no-margin fondocontener p-4">
           <div className="col-md-4">
             {/* Contenido de la columna izquierda */}
             {/* ... */}
@@ -44,7 +44,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="nombres"
                   value={nombres}
                   onChange={(e) => setNombres(e.target.value)}
@@ -57,7 +57,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="apellidos"
                   value={apellidos}
                   onChange={(e) => setApellidos(e.target.value)}
@@ -70,7 +70,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="tel"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="telefono"
                   value={telefono}
                   onChange={(e) => setTelefono(e.target.value)}
@@ -83,7 +83,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="correo"
                   value={correo}
                   onChange={(e) => setCorreo(e.target.value)}
@@ -104,7 +104,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="date"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="fechaNacimiento"
                   value={fechaNacimiento}
                   onChange={(e) => setFechaNacimiento(e.target.value)}
@@ -117,7 +117,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="file"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="imagenPerfil"
                   accept="image/*"
                   onChange={handleImagenPerfilChange}
@@ -141,7 +141,7 @@ const Registrarse = () => {
                 </label>
                 <input
                   type="password"
-                  className="form-control"
+                  className="form-control inputverde"
                   id="contrasena"
                   value={contrasena}
                   onChange={(e) => setContrasena(e.target.value)}
