@@ -156,10 +156,8 @@ span .page-link {
   text-align: center;
   margin: 0 auto;
 
-
   padding-left: 65px;
   padding-top: 25px;
-
 }
 .icono {
   float: left;
@@ -316,7 +314,6 @@ span .page-link {
   position: fixed;
 }
 
-
 .parrafoq {
   font-size: 20px;
   text-align: left;
@@ -324,7 +321,7 @@ span .page-link {
   padding-left: 65px;
   padding-top: 25px;
   color: #ffffff;
-
+}
 /*CSS DE CONTACTDek*/
 .contiContact {
   margin-top: 10%;
@@ -355,5 +352,5 @@ span .page-link {
 }
 .contenedorzx {
   background-color: #586f6b;
-
+  color: #cfc0bd;
 }
