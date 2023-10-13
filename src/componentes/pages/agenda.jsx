@@ -22,8 +22,8 @@ function Agenda() {
         <TimePicker className="time-picker" />
 
         <div className="button-container">
-          <button className="add-button">Agregar</button>
-          <button className="cancel-button">Cancelar</button>
+          <button className="add-button">AGREGAR</button>
+          <button className="cancel-button">CANCELAR</button>
         </div>
       <div className="agenda-left">
         <DatePicker

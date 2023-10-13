@@ -370,6 +370,8 @@ span .page-link {
   flex: 1; 
   text-align: left; 
   padding-left: 15%;
+  margin-bottom: 10%;
+  margin-top: -100px;
 }
 .agenda-heading {
   font-size: 28px;
@@ -388,8 +390,19 @@ span .page-link {
 .time-picker{
   text-align: right;
   padding-right: 30%;
+  margin-right: 5px;
 }
 
+
 .add-button{
+  margin-top: 2%;
   margin-left: 35%;
+  margin-right: 1%;
+  background-color: #cfc0bd;
+  color: #2a605a;
+}
+
+.cancel-button{
+  background-color: #cfc0bd;
+  color: #2a605a;
 }
