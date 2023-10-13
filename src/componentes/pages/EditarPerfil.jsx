@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
+//llamando obbjetos staticos
+import * as datos from "../secciones/staticdata";
+import { CartaPropi } from "../secciones/cartapropi";
 
 const EditarPerfil = () => {
   //estilos separados
@@ -66,8 +69,11 @@ const EditarPerfil = () => {
           </Col>
           <Col xs={12} md={7}>
             <section>
-              <h2 style={{ color: "#CFC0BD" }}>Mis publicaciónes</h2>
+              <h2 style={{ color: "#CFC0BD", textAlign: "center" }}>
+                Mis publicaciónes
+              </h2>
             </section>
+            <CartaPropi data={datos.publi1} />
           </Col>
         </Row>
       </Container>
