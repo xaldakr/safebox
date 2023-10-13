@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../style/login.css";
-
+import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -20,48 +20,58 @@ const Login = () => {
 
   return (
     <div className="fondo">
-      <div className="container mt-5 ">
+      <div className="container mt-5 w-100 h-100">
         <div className="row justify-content-center align-items-center vh-100">
           <div className="col-md-3 text-center">
-            <div className="card">
-              <div className="card-body">
-                <h2 className="card-title">Iniciar sesión</h2>
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label">
-                      Correo electrónico
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      placeholder="Tu correo electrónico"
-                      value={email}
-                      onChange={handleEmailChange}
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="password" className="form-label">
-                      Contraseña
-                    </label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="password"
-                      placeholder="Tu contraseña"
-                      value={password}
-                      onChange={handlePasswordChange}
-                      required
-                    />
-                    <a className="lost" href="">
-                      Olvide mi contraseña
-                    </a>
-                  </div>
-                  <button type="submit" className="btn btn-success">
-                    <strong>Iniciar sesión</strong>
-                  </button>
-                </form>
+            <div className="cardo">
+              <div className="card">
+                <div className="card-body">
+                  <h2 className="card-title">Iniciar sesión</h2>
+                  <form onSubmit={handleSubmit}>
+                    <div className="mb-3">
+                      <label htmlFor="email" className="form-label">
+                        Correo electrónico
+                      </label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        placeholder="Tu correo electrónico"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label htmlFor="password" className="form-label">
+                        Contraseña
+                      </label>
+                      <input
+                        type="password"
+                        className="form-control"
+                        id="password"
+                        placeholder="Tu contraseña"
+                        value={password}
+                        onChange={handlePasswordChange}
+                        required
+                      />
+                      <a className="lost" href="">
+                        Olvide mi contraseña
+                      </a>
+                      <br />
+                      <Link to="../register">
+                        <a className="lost" href="">
+                          No tengo cuenta || Crear cuenta
+                        </a>
+                      </Link>
+                    </div>
+                    <Link to="../publish">
+                      <button type="submit" className="btn btn-success w-100">
+                        <strong>Iniciar sesión</strong>
+                      </button>
+                    </Link>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

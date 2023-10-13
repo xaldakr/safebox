@@ -95,6 +95,7 @@ body {
   font-size: 3vw;
 }
 
+
 .conocenos-page {
   padding-top: 150px;
   background-color: #586F6B;
@@ -140,5 +141,22 @@ body {
 .icono {
   float: left;
   margin-right: 35px; /* Ajusta el margen derecho según tus preferencias */
+}
+
+
+.carda {
+  height: 40%;
+}
+.stick {
+  overflow-y: auto;
+}
+.noy {
+  overflow-y: hidden;
+}
+.nox {
+  overflow-x: hidden;
+}
+.nobg {
+  background-color: #00000000;
 }
 

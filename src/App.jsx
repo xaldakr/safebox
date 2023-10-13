@@ -6,14 +6,21 @@ import Signup from "./componentes/pages/singup";
 import Navbarra from "./componentes/secciones/Navbarra";
 import Home from "./componentes/home/Home";
 import Conocenos from "./componentes/pages/conocenos";
+import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
+import CustomFooter from "./componentes/home/footer";
+
 function App() {
   return (
     <div className="App">
-      <Navbarra data={true} />
-      <Home />
+      <Navbarra data={false} />
       <Routes>
-      <Route path="conocenos" element={<Conocenos />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="explore" element={<Explorar />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Signup />} />
+        <Route path="publish" element={<PublicarPropiedad />} />
       </Routes>
+      <CustomFooter />
     </div>
   );
 }

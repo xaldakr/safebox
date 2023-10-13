@@ -7,10 +7,10 @@
   background-position: center;
   height: 100vh; /* Esto ajustará la altura del contenedor al 100% del viewport */
 }
-.card {
+.cardo .card {
   background-color: rgb(0, 0, 0, 0);
 }
-.card-body {
+.cardo .card-body {
   z-index: 1;
   background-color: rgb(88, 111, 107, 0.8);
   color: #cfc0bd;
@@ -20,11 +20,11 @@
   background-color: #cfc0bd;
   color: #2a605a;
 }
-.card-body input {
+.cardo .card-body input {
   background-color: #2a605a;
 }
 
-.card-body input::placeholder {
+.cardo .card-body input::placeholder {
   color: #cfc0bd;
 }
 

@@ -7,7 +7,7 @@
   height: 100vh; /* Esto ajustará la altura del contenedor al 100% del viewport */
 }
 
-.container {
+.contiene .container {
   background-color: rgb(88, 111, 107, 0.8);
   max-width: 900px;
   margin-top: 10%;
