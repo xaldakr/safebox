@@ -156,8 +156,10 @@ span .page-link {
   text-align: center;
   margin: 0 auto;
 
+
   padding-left: 65px;
   padding-top: 25px;
+
 }
 .icono {
   float: left;
@@ -314,6 +316,7 @@ span .page-link {
   position: fixed;
 }
 
+
 .parrafoq {
   font-size: 20px;
   text-align: left;
@@ -321,4 +324,36 @@ span .page-link {
   padding-left: 65px;
   padding-top: 25px;
   color: #ffffff;
+
+/*CSS DE CONTACTDek*/
+.contiContact {
+  margin-top: 10%;
+}
+.fondoContactd {
+  background-image: url("./multimedia/images/estaticos/general/ContactDek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.DifuminadoContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 111, 107, 0.8);
+  color: #cfc0bd;
+}
+
+/*CSS DATOSCONTACT*/
+.ContactFd {
+  background-image: url("./multimedia/images/estaticos/general/ContactDek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.contenedorzx {
+  background-color: #586f6b;
+
 }
