@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import {
   faTwitter,
   faFacebook,
@@ -112,9 +113,9 @@ function CustomFooter() {
                 </a>
               </li>
               <li>
-                <a href="/" className="text-light text-decoration-none">
-                  EXPLORAR
-                </a>
+                <Link to="Ayuda">
+                  <a className="text-light text-decoration-none">AYUDA</a>
+                </Link>
               </li>
             </ul>
           </Col>
