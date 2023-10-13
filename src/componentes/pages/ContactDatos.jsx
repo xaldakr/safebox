@@ -1,22 +1,6 @@
-import React, { useState } from "react";
 import "../../style/login.css";
-import { Link } from "react-router-dom";
-const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
+const ContactDatos = () => {
   return (
     <div className="ContactFd">
       <div className="container mt-5 w-100 h-100">
@@ -54,4 +38,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ContactDatos;
