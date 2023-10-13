@@ -15,18 +15,20 @@ import Ayuda from "./componentes/pages/ayuda";
 //import Contactanos from "./componentes/pages/ContactEXTRA";
 import Contacto from "./componentes/pages/ContactDatos";
 
-
 function App() {
   return (
     <div className="App">
       <Navbarra data={true} />
       <Routes>
-        <Route path="/" exact element={<Agenda />} />
+
+        <Route path="/" exact element={<Home />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
         <Route path="publish" element={<PublicarPropiedad />} />
-        <Route path="quienes" element={<QuienesSomos/>} />
+        <Route path="quienes" element={<QuienesSomos />} />
+        <Route path="contactar" element={<Contacto />} />
+        <Route path="verprop" element={<VistaPropiedad />} />
       </Routes>
       <CustomFooter />
     </div>

@@ -28,9 +28,7 @@ function Home() {
                     Casa en buen estado, construida hace 5 años, con 5
                     habitaciones y 3 baños y...
                   </p>
-                  <Button
-                    style={{ backgroundColor: "#EBEBEB", color: "#2A605A" }}
-                  >
+                  <Button className="bglime whitetxt" variant="success">
                     Ver
                   </Button>
                 </div>
@@ -44,9 +42,7 @@ function Home() {
                 <div className="carousel-caption-custom">
                   <h3>Título de la Imagen 2</h3>
                   <p>Descripción de la Imagen 2.</p>
-                  <Button
-                    style={{ backgroundColor: "#EBEBEB", color: "#2A605A" }}
-                  >
+                  <Button className="bglime whitetxt" variant="success">
                     Ver
                   </Button>
                 </div>
@@ -55,20 +51,15 @@ function Home() {
           </Col>
           {/* Contenido */}
           <Col md={5} className="split-content">
-            <h1 className="custom-h1">Publicación y Venta de Bienes Raíces</h1>
+            <h1 className="custom-h1 grandtxt whitetxt">
+              Publicación y <br /> Venta de Bienes Raíces
+            </h1>
             <div className="search-box">
-              <input
-                type="text"
-                placeholder="Buscar..."
-                className="form-control custom-input-small mb-2 w-100" // Añade una clase para el estilo personalizado
-              />
+              <br />
               <Link to="/explore">
                 <Button
-                  style={{
-                    backgroundColor: "#EBEBEB",
-                    color: "#2A605A",
-                    height: "9vh",
-                  }}
+                  variant="success"
+                  className="px-5 bgwhite grandtxt py-3"
                 >
                   EXPLORAR
                 </Button>
@@ -76,10 +67,11 @@ function Home() {
             </div>
           </Col>
         </Row>
+        <br />
         <Row className="mt-5">
           <Col>
             <h1 className="custom-h1">AGREGADO RECIENTEMENTE</h1>
-            <Carousel>
+            <Carousel controls={false}>
               <Carousel.Item>
                 <Row>
                   {/* Primera instancia de Carta */}
@@ -96,6 +88,7 @@ function Home() {
             </Carousel>
           </Col>
         </Row>
+        <br />
         <Row>
           <Conocenos />
         </Row>
