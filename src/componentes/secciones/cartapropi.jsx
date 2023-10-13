@@ -92,15 +92,17 @@ export function CartaPropi(props) {
                 </h1>
               </Col>
               <Col md={4} xl={3} className=" justify-content-end pe-3">
-                <button className="bgmoss  text-center  rounded rounded-pill">
-                  <h1>
-                    <FontAwesomeIcon
-                      icon={faEye}
-                      className="text-black text-end  "
-                    />
-                    Ver
-                  </h1>
-                </button>
+                <Link to="/verprop">
+                  <button className="bgmoss  text-center  rounded rounded-pill">
+                    <h1>
+                      <FontAwesomeIcon
+                        icon={faEye}
+                        className="text-black text-end  "
+                      />
+                      Ver
+                    </h1>
+                  </button>
+                </Link>
               </Col>
             </Row>
           </Col>
