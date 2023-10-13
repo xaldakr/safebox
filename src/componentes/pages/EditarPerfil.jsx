@@ -9,7 +9,7 @@ const EditarPerfil = () => {
   //estilos separados
   const bg_editPorfile = {
     backgroundColor: "#7F8D84",
-    minHeight: "100vh",
+
     borderRadius: "10px",
   };
 
@@ -36,7 +36,7 @@ const EditarPerfil = () => {
     <div>
       <Container>
         <Row className="mt-5 ">
-          <Col style={bg_editPorfile} xs={12} md={12}>
+          <Col style={bg_editPorfile} xs={12} md={12} className="mb-4">
             <section style={flex_config} className="d-flex ">
               <h2 style={{ color: "#CFC0BD" }}>MÍ PERFIL</h2>
               <img src="" alt="imagen del usuario" />
