@@ -5,6 +5,7 @@ import Login from "./componentes/pages/login";
 import Signup from "./componentes/pages/singup";
 import Navbarra from "./componentes/secciones/Navbarra";
 import Home from "./componentes/home/Home";
+import Agenda from "./componentes/pages/agenda";
 import QuienesSomos from "./componentes/pages/quienessomos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <Navbarra data={true} />
       <Routes>
+
         <Route path="/" exact element={<Home />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="login" element={<Login />} />
