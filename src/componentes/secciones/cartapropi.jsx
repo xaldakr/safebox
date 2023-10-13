@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card, Row, Col, InputGroup } from "react-bootstrap";
+import { Card, Row, Col, InputGroup, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faRuler,
@@ -24,7 +24,7 @@ import {
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-function CartaPropi(props) {
+export function CartaPropi(props) {
   const {
     id,
     titulo,
@@ -43,13 +43,15 @@ function CartaPropi(props) {
     patio,
   } = props.data;
   return (
-    <Card className="bgdark whitetxt">
-      <Row>
-        <Col md={7}>
-          <Card.Body>
+    <Card className="bgdark whitetxt h-100">
+      <Card.Body className="h-100">
+        <Row className="h-100">
+          <Col md={7} className="m-0 gy-3 h-100 align-items-center pt-auto">
             <h1 className="px-3 text-start titulo">{titulo}</h1>
-            <h4 className="px-3 text-start normaltxt">{desc.slice(0, 120)}</h4>
-            <Row>
+            <h4 className="px-3 text-start normaltxt">
+              {desc.slice(0, 120)}...
+            </h4>
+            <Row className="text-start px-3">
               <Col>
                 <p>
                   <FontAwesomeIcon icon={faRuler} /> {extension} m²
@@ -66,7 +68,7 @@ function CartaPropi(props) {
                 </p>
               </Col>
             </Row>
-            <Row>
+            <Row className="text-start px-3">
               <Col>
                 <p>
                   <FontAwesomeIcon icon={faToilet} /> {bano}
@@ -85,28 +87,34 @@ function CartaPropi(props) {
             </Row>
             <Row className="">
               <Col md={8} xl={9}>
-                <h1 className=" titulo text-black text-start ps-3">{precio}</h1>
+                <h1 className=" titulo text-black text-start ps-3 grandtxt">
+                  ${precio}
+                </h1>
               </Col>
               <Col md={4} xl={3} className=" justify-content-end pe-3">
-                <Button className="bgmoss btn-outline-success text-end">
-                  <FontAwesomeIcon
-                    icon={faEye}
-                    className="whitetxt text-end grandtxt2"
-                  />
-                </Button>
+                <Link to="/verprop">
+                  <button className="bgmoss  text-center  rounded rounded-pill">
+                    <h1>
+                      <FontAwesomeIcon
+                        icon={faEye}
+                        className="text-black text-end  "
+                      />
+                      Ver
+                    </h1>
+                  </button>
+                </Link>
               </Col>
             </Row>
-          </Card.Body>
-        </Col>
-        <Col md={5}>
-          <Card.Img
-            src={`../../multimedia/images/estaticos/general/casa${
-              id == 2 ? 1 : 4
-            }`}
-            alt="Imagen"
-          />
-        </Col>
-      </Row>
+          </Col>
+          <Col md={5} className="m-0 h-100">
+            <Card.Img
+              className=" img-fluid h-100 w-100"
+              src={id}
+              alt="Imagen"
+            />
+          </Col>
+        </Row>
+      </Card.Body>
     </Card>
   );
 }

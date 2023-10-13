@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Carousel, Button, Card } from "react-bootstrap";
+import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
 import "./Home.css";
+import Carta from './Carta';
 import img1 from "./media/casa1.jpg";
 import img2 from "./media/casa2.jpg";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="bgwhite">
@@ -59,15 +60,17 @@ function Home() {
                 placeholder="Buscar..."
                 className="form-control custom-input-small mb-2 w-100" // Añade una clase para el estilo personalizado
               />
-              <Button
-                style={{
-                  backgroundColor: "#EBEBEB",
-                  color: "#2A605A",
-                  height: "9vh",
-                }}
-              >
-                EXPLORAR
-              </Button>
+              <Link to="/explore">
+                <Button
+                  style={{
+                    backgroundColor: "#EBEBEB",
+                    color: "#2A605A",
+                    height: "9vh",
+                  }}
+                >
+                  EXPLORAR
+                </Button>
+              </Link>
             </div>
           </Col>
         </Row>
@@ -77,72 +80,15 @@ function Home() {
             <Carousel>
               <Carousel.Item>
                 <Row>
-                  {/* Tarjeta 1 */}
-                  <Col md={4}>
-                    <Card className="mb-4 custom-card">
-                      <Card.Img
-                        variant="top"
-                        src={img1}
-                        alt="Imagen de propiedad"
-                      />
-                      <Card.Body>
-                        <Card.Title>
-                          Casa en venta el palmar negociable
-                        </Card.Title>
-                        <Card.Text>
-                          Vendo tremenda casa enSanta Ana el palmar porque me
-                          pica la p...
-                        </Card.Text>
-                        <Card.Text>$ 30,000</Card.Text>
-                        <Button variant="primary" className="custom-button">
-                          Ver Más
-                        </Button>
-                      </Card.Body>
-                    </Card>
+                 {/* Primera instancia de Carta */}
+                 <Col md={6}>
+                    <Carta />
                   </Col>
-                  {/* Tarjeta 2 */}
-                  <Col md={4}>
-                    <Card className="mb-4 custom-card">
-                      <Card.Img
-                        variant="top"
-                        src={img1}
-                        alt="Imagen de propiedad"
-                      />
-                      <Card.Body>
-                        <Card.Title>
-                          Vendo casa en el trébol sean serios
-                        </Card.Title>
-                        <Card.Text>
-                          Vendo bonita casa en Santa Ana tiene 16 baños y una
-                          ducha..
-                        </Card.Text>
-                        <Card.Text>$ 300,000</Card.Text>
-                        <Button variant="primary" className="custom-button">
-                          Ver Más
-                        </Button>
-                      </Card.Body>
-                    </Card>
+                  {/* Segunda instancia de Carta */}
+                  <Col md={6}>
+                    <Carta />
                   </Col>
-                  {/* Tarjeta 3 */}
-                  <Col md={4}>
-                    <Card className="mb-4 custom-card">
-                      <Card.Img
-                        variant="top"
-                        src={img1}
-                        alt="Imagen de propiedad"
-                      />
-                      <Card.Body>
-                        <Card.Title>Casa Metapan</Card.Title>
-                        <Card.Text>
-                          Casa Metapan, Casa Metapan bonita casa con vacas
-                        </Card.Text>
-                        <Card.Text>$ 510000,000</Card.Text>
-                        <Button variant="primary" className="custom-button">
-                          Ver Más
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  </Col>
+                  {/* Tercera instancia de Carta */}
                 </Row>
               </Carousel.Item>
             </Carousel>

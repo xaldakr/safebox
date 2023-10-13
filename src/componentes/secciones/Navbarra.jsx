@@ -48,7 +48,7 @@ function Navbarra(props) {
         <Row className="w-100 justify-content-center align-items-center">
           <Col lg={4}>
             <Nav className="justify-content-start w-100 whitetxt">
-              <Nav.Link as={Link} to="conocer" className="">
+              <Nav.Link as={Link} to="Conocenos" className="">
                 <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
                   Conocenos
                 </h2>
@@ -75,12 +75,14 @@ function Navbarra(props) {
                   aria-describedby="basic-addon2"
                 />
                 <div className="input-group-append">
-                  <button
-                    className="btn bgreen border border-1 border-black whitetxt"
-                    type="button"
-                  >
-                    Explorar
-                  </button>
+                  <Link to="explore">
+                    <button
+                      className="btn bgreen border border-1 border-black whitetxt w-100"
+                      type="button"
+                    >
+                      Explorar
+                    </button>
+                  </Link>
                 </div>
               </InputGroup>
             )}

@@ -13,6 +13,13 @@ import img2 from "../home/media/casa2.jpg";
 
 const bg_Propiedad = {
   color: "#CFC0BD",
+  backgroundColor: "#586f6b",
+};
+const styledButton = {
+  width: "100%",
+  backgroundColor: "#CFC0BD",
+  color: "#2A605A",
+  border: "3px solid #2A605A",
 };
 const styledButton = {
   width: "100%",
@@ -21,9 +28,11 @@ const styledButton = {
   border: "3px solid #2A605A",
 };
 
-const VistaPropiedad = () => {
+export const VistaPropiedad = () => {
   return (
     <div style={bg_Propiedad}>
+      <div className="naa"></div>
+      <br />
       <Container>
         <Row>
           <Col xs={12} md={6}>
