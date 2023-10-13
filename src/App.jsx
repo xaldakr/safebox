@@ -18,7 +18,6 @@ import Contacto from "./componentes/pages/ContactDatos";
 import Notificaciones from "./componentes/pages/Notificaciones";
 //Notificaciones
 
-
 function App() {
   return (
     <div className="App">
@@ -26,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
 
-        <Route path="Notificaciones" element={<Notificaciones />} />
+        <Route path="notif" element={<Notificaciones />} />
 
         <Route path="explore" element={<Explorar />} />
 
@@ -42,7 +41,6 @@ function App() {
         <Route path="verprop" element={<VistaPropiedad />} />
         <Route path="agendar" element={<Agenda />} />
         <Route path="properties" element={<EditarPerfil />} />
-
       </Routes>
       <CustomFooter />
     </div>

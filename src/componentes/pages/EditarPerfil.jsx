@@ -1,9 +1,12 @@
 import React from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 //llamando obbjetos staticos
 import * as datos from "../secciones/staticdata";
 import { CartaPropiEdit } from "../secciones/CartapropiEdit";
 import Pagination from "react-bootstrap/Pagination";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAdd } from "@fortawesome/free-solid-svg-icons";
 
 const EditarPerfil = () => {
   //estilos separados
@@ -74,7 +77,20 @@ const EditarPerfil = () => {
               <h2 style={{ color: "#CFC0BD", textAlign: "center" }}>
                 Mis publicaciónes
               </h2>
+              <br />
+              <Link to="/publish">
+                <button className="bgmoss  text-center  rounded rounded-pill p-4 ">
+                  <h1>
+                    <FontAwesomeIcon
+                      icon={faAdd}
+                      className="text-black text-end  "
+                    />
+                    Editar
+                  </h1>
+                </button>
+              </Link>
             </section>
+            <br />
             <div>
               <CartaPropiEdit data={datos.publi1} />
             </div>
