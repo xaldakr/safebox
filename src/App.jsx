@@ -14,12 +14,12 @@ function App() {
     <div className="App">
       <Navbarra data={false} />
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={<PublicarPropiedad />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
         <Route path="publish" element={<PublicarPropiedad />} />
-        <Route path="quienes" element={<QuienesSomos/>} />
+        <Route path="quienes" element={<QuienesSomos />} />
       </Routes>
       <CustomFooter />
     </div>

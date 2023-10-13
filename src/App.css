@@ -227,6 +227,10 @@ span .page-link {
 
   color: #cfc0bd;
 }
+.fondocontener2 {
+  background-color: rgb(88, 111, 107, 0.8);
+  color: #cfc0bd;
+}
 .btn {
   background-color: #cfc0bd;
   color: #2a605a;
@@ -236,6 +240,10 @@ span .page-link {
 .inputverde {
   background-color: #2a605a;
   color: #cfc0bd;
+}
+.inputverde::placeholder {
+  background-color: #2a605a;
+  color: #cfc0bdd1;
 }
 /*Quienes Somos*/
 .quienes-somos-page {
