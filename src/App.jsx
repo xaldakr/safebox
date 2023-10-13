@@ -23,14 +23,13 @@ function App() {
     <div className="App">
       <Navbarra data={true} />
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={<Ayuda />} />
 
         <Route path="notif" element={<Notificaciones />} />
 
         <Route path="explore" element={<Explorar />} />
-
+        <Route path="Ayuda" element={<Ayuda />} />
         <Route path="login" element={<Login />} />
-
         <Route path="explore" element={<Explorar />} />
         <Route path="ContactDatos" element={<Contacto />} />
         <Route path="register" element={<Signup />} />
