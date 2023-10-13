@@ -54,7 +54,7 @@ function Navbarra(props) {
                   Conocenos
                 </h2>
               </Nav.Link>
-              <Nav.Link as={Link} to="contactar" className="">
+              <Nav.Link as={Link} to="ContactDatos" className="">
                 <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
                   Contactanos
                 </h2>
@@ -72,7 +72,7 @@ function Navbarra(props) {
                       <b className="d-none d-xl-inline-block">Notificaciones</b>
                     </h2>
                   </Nav.Link>
-                  <Nav.Link as={Link} to="properties" className="d-inline">
+                  <Nav.Link as={Link} to="Notificaciones" className="d-inline">
                     <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
                       <FontAwesomeIcon icon={faHouseChimneyWindow} />
                       <b className="d-none d-xl-inline-block">

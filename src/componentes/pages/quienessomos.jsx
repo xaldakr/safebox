@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../home/media/bgQuienes.mp4";
-
+import "../../App.css";
+import { Link } from "react-router-dom";
 function QuienesSomos() {
   return (
     <div className="quienes-somos-page">
@@ -10,9 +11,11 @@ function QuienesSomos() {
       </video>
       <div className="quienes-somos-overlay"></div>
       <div className="quienes-somos-content">
+
         <h1 className="h77" style={{ textAlign: "left" }}>
           QUIENES SOMOS
         </h1>
+
         <div className="parrafos-container">
           <div className="parrafoq">
             <p>
@@ -35,7 +38,9 @@ function QuienesSomos() {
             </p>
           </div>
         </div>
-        <button className="contactar-button">Contactar</button>
+        <Link to="/ContactDatos">
+          <button className="contactar-button">Contactar</button>
+        </Link>
       </div>
     </div>
   );
