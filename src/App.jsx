@@ -25,7 +25,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
         <Route path="publish" element={<PublicarPropiedad />} />
-        <Route path="quienes" element={<QuienesSomos/>} />
+        <Route path="quienes" element={<QuienesSomos />} />
       </Routes>
       <CustomFooter />
     </div>
