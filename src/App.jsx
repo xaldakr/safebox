@@ -5,7 +5,7 @@ import Login from "./componentes/pages/login";
 import Signup from "./componentes/pages/singup";
 import Navbarra from "./componentes/secciones/Navbarra";
 import Home from "./componentes/home/Home";
-import Conocenos from "./componentes/pages/conocenos";
+import QuienesSomos from "./componentes/pages/quienessomos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
 
@@ -19,6 +19,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
         <Route path="publish" element={<PublicarPropiedad />} />
+        <Route path="quienes" element={<QuienesSomos/>} />
       </Routes>
       <CustomFooter />
     </div>
