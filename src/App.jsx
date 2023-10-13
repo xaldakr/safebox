@@ -8,7 +8,7 @@ import Home from "./componentes/home/Home";
 import QuienesSomos from "./componentes/pages/quienessomos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
-
+import EditarPerfil from "./componentes/pages/EditarPerfil";
 import VistaPropiedad from "./componentes/pages/VistaPropiedad";
 import Ayuda from "./componentes/pages/ayuda";
 //import Contactanos from "./componentes/pages/ContactEXTRA";
@@ -27,6 +27,7 @@ function App() {
         <Route path="quienes" element={<QuienesSomos />} />
         <Route path="contactar" element={<Contacto />} />
         <Route path="verprop" element={<VistaPropiedad />} />
+        <Route path="properties" element={<EditarPerfil />} />
       </Routes>
       <CustomFooter />
     </div>

@@ -362,7 +362,7 @@ const PublicarPropiedad = () => {
                   </FloatingLabel>
                 </Col>
               </Row>
-              <h3 className="text-center">Las visitas duran una hora.</h3>
+              <h3 className="text-center">Las visitas duran una hora</h3>
             </Form>
           </Col>
         </Row>

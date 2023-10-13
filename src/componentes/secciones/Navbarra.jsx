@@ -68,13 +68,17 @@ function Navbarra(props) {
                 <>
                   <Nav.Link as={Link} to="notif" className="d-inline">
                     <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
-                      <FontAwesomeIcon icon={faBell} /> Notificaciones
+                      <FontAwesomeIcon icon={faBell} />{" "}
+                      <b className="d-none d-xl-inline-block">Notificaciones</b>
                     </h2>
                   </Nav.Link>
                   <Nav.Link as={Link} to="properties" className="d-inline">
                     <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
-                      <FontAwesomeIcon icon={faHouseChimneyWindow} /> Mis
-                      Propiedades
+                      <FontAwesomeIcon icon={faHouseChimneyWindow} />
+                      <b className="d-none d-xl-inline-block">
+                        {" "}
+                        Mis Propiedades
+                      </b>
                     </h2>
                   </Nav.Link>
                   <Nav.Link as={Link} to="properties" className="d-inline">
