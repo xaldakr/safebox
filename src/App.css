@@ -152,17 +152,16 @@ span .page-link {
 }
 
 .parrafo {
-  font-size: 25px; 
-  text-align: center; 
+  font-size: 25px;
+  text-align: center;
   margin: 0 auto;
 
-  padding-left: 65px; 
+  padding-left: 65px;
   padding-top: 25px;
-
 }
 .icono {
   float: left;
-  margin-right: 35px; 
+  margin-right: 35px;
 }
 
 .carda {
@@ -181,25 +180,24 @@ span .page-link {
   background-color: #00000000;
 }
 
-
 /* Fernando Tal*/
 .fondoayuda {
   display: flex;
   background-color: #2a605a;
   min-height: 100vh;
   color: #cfc0bd;
-
+}
 /*Quienes Somos*/
 .quienes-somos-page {
   background-size: cover;
   font-family: Arial, sans-serif;
-  color: #ffffff; 
-  position: relative; 
+  color: #ffffff;
+  position: relative;
   overflow: hidden;
   opacity: 0.8;
 }
 .quienes-somos-page::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -207,7 +205,6 @@ span .page-link {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
   z-index: 1;
-
 }
 .video-bg {
   position: absolute;
@@ -226,29 +223,27 @@ span .page-link {
   text-align: left;
   padding-top: 1%;
   padding-bottom: 1%;
-  position: relative; 
+  position: relative;
   z-index: 1;
 }
 
 .contactar-button {
   float: left;
-  background-color: #2A605A;
-  color: #cfc0bd; 
+  background-color: #2a605a;
+  color: #cfc0bd;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 18px;
 }
 .contactar-button:hover {
-  background-color: #065037; 
+  background-color: #065037;
 }
 
-
-h77 {
+.h77 {
   font-size: 54px;
   margin-bottom: 20px;
   font-family: Arial, sans-serif;
-
 }
 
 .btn {
@@ -270,11 +265,10 @@ h77 {
 }
 
 .parrafoq {
-  font-size: 20px; 
-  text-align: left; 
+  font-size: 20px;
+  text-align: left;
   margin: 0 auto;
-  padding-left: 65px; 
+  padding-left: 65px;
   padding-top: 25px;
   color: #ffffff;
 }
-
