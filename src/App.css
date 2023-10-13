@@ -117,7 +117,6 @@ span .page-link {
   font-size: 3vw;
 }
 
-
 .conocenos-page {
   padding-top: 150px;
   background-color: #586f6b;
@@ -181,7 +180,10 @@ span .page-link {
 .nobg {
   background-color: #00000000;
 }
-
+.nodecoa {
+  text-decoration: none;
+  color: #cfc0bd !important;
+}
 /* Fernando Tal*/
 .fondoayuda {
   display: flex;
@@ -364,4 +366,3 @@ span .page-link {
   background-color: #586f6b;
   color: #cfc0bd;
 }
-
