@@ -10,6 +10,9 @@ import {
   faTree,
   faToilet,
   faDotCircle,
+  faEye,
+  faPencilAlt,
+  faSun,
 } from "@fortawesome/free-solid-svg-icons";
 
 //estilos personalizados para la sección de Publicar y editar propiedad
@@ -32,7 +35,7 @@ const styledButton = {
   border: "3px solid #2A605A",
 };
 
-const PublicarPropiedad = () => {
+const EditarPropiedad = () => {
   return (
     <div style={{ backgroundColor: "#939d91" }}>
       <div className="naa"></div>
@@ -40,7 +43,33 @@ const PublicarPropiedad = () => {
       <Container className="fondocontener2">
         <Row>
           <Col>
-            <h1 className="text-center">PUBLICAR PROPIEDAD</h1>
+            <h1 className="text-center">EDITAR PROPIEDAD</h1>
+            <hr />
+            <h2 className="text-center">Estadísticas prinicpales</h2>
+            <br />
+            <Row className="text-center px-3">
+              <Col>
+                <h4>
+                  <FontAwesomeIcon icon={faEye} /> Visitas : 2500
+                </h4>
+              </Col>
+              <Col>
+                <h4>
+                  <FontAwesomeIcon icon={faPencilAlt} /> Ediciones: 3
+                </h4>
+              </Col>
+              <Col>
+                <h4>
+                  <FontAwesomeIcon icon={faSun} /> Días: 23
+                </h4>
+              </Col>
+            </Row>
+            <br />
+            <br />
+            <Button variant="success" className="px-5 bgwhite grandtxt py-3">
+              MARCAR COMO VENDIDA
+            </Button>
+            <hr />
             <h2 className="mb-3">DATOS PRINCIPALES DE LA PROPIEDAD</h2>
           </Col>
         </Row>
@@ -375,4 +404,4 @@ const PublicarPropiedad = () => {
   );
 };
 
-export default PublicarPropiedad;
+export default EditarPropiedad;
