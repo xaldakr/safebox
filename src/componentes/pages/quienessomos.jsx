@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../home/media/bgQuienes.mp4";
 import "../../App.css";
-
+import { Link } from "react-router-dom";
 function QuienesSomos() {
   return (
     <div className="quienes-somos-page">
@@ -36,7 +36,9 @@ function QuienesSomos() {
             </p>
           </div>
         </div>
-        <button className="contactar-button">Contactar</button>
+        <Link to="/ContactDatos">
+          <button className="contactar-button">Contactar</button>
+        </Link>
       </div>
     </div>
   );

@@ -53,7 +53,7 @@ function Navbarra(props) {
                   Conocenos
                 </h2>
               </Nav.Link>
-              <Nav.Link as={Link} to="contactar" className="">
+              <Nav.Link as={Link} to="ContactDatos" className="">
                 <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
                   Contactanos
                 </h2>
