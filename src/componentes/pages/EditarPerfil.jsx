@@ -2,13 +2,15 @@ import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 //llamando obbjetos staticos
 import * as datos from "../secciones/staticdata";
-import { CartaPropi } from "../secciones/cartapropi";
+import { CartaPropiEdit } from "../secciones/CartapropiEdit";
+import Pagination from "react-bootstrap/Pagination";
 
 const EditarPerfil = () => {
   //estilos separados
-  const bg_aside_editPorfile = {
+  const bg_editPorfile = {
     backgroundColor: "#7F8D84",
     minHeight: "100vh",
+    borderRadius: "10px",
   };
 
   const flex_config = {
@@ -16,7 +18,7 @@ const EditarPerfil = () => {
     width: "100%",
     gap: "4vh",
     textAlign: "center",
-    margin: "0 0 10% 0",
+    margin: "0 0 5% 0",
   };
 
   const button_edit = {
@@ -32,10 +34,10 @@ const EditarPerfil = () => {
 
   return (
     <div>
-      <Container style={{ marginLeft: 0 }}>
-        <Row>
-          <Col style={bg_aside_editPorfile} xs={12} md={5}>
-            <section style={flex_config} className="d-flex fle">
+      <Container>
+        <Row className="mt-5 ">
+          <Col style={bg_editPorfile} xs={12} md={12}>
+            <section style={flex_config} className="d-flex ">
               <h2 style={{ color: "#CFC0BD" }}>MÍ PERFIL</h2>
               <img src="" alt="imagen del usuario" />
               <input style={{ marginLeft: "25%", width: "50%" }} type="file" />
@@ -44,22 +46,22 @@ const EditarPerfil = () => {
             <Form>
               <Form.Group className="mb-4">
                 <Form.Label>Nombre</Form.Label>
-                <Form.Control type="text" placeholder="Actualiza tu nombre" />
+                <Form.Control type="text" placeholder="José Luis" />
               </Form.Group>
 
               <Form.Group className="mb-4">
                 <Form.Label>Apellido</Form.Label>
-                <Form.Control type="text" placeholder="Actualiza tu Apellido" />
+                <Form.Control type="text" placeholder="Alvares Gutie" />
               </Form.Group>
 
               <Form.Group className="mb-4">
                 <Form.Label>Teléfono</Form.Label>
-                <Form.Control type="text" placeholder="Actualiza tu Teléfono" />
+                <Form.Control type="text" placeholder="0000-0000" />
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Label>Correo electronico:</Form.Label>
-                <Form.Control type="email" placeholder="Actualiza tu correo" />
+                <Form.Control type="email" placeholder="Correo@correo.com" />
                 <Form.Text className="text-muted">
                   Estos datos nunca se compartiran con nadie.
                 </Form.Text>
@@ -67,13 +69,31 @@ const EditarPerfil = () => {
               <input type="submit" style={button_edit} value="Editar" />
             </Form>
           </Col>
-          <Col xs={12} md={7}>
+          <Col xs={12} md={12}>
             <section>
               <h2 style={{ color: "#CFC0BD", textAlign: "center" }}>
                 Mis publicaciónes
               </h2>
             </section>
-            <CartaPropi data={datos.publi1} />
+            <div>
+              <CartaPropiEdit data={datos.publi1} />
+            </div>
+            <Pagination
+              className="w-100 justify-content-center mt-5 "
+              size="md"
+            >
+              <Pagination.First className="bggreen whitetxt" />
+              <Pagination.Prev className="bggreen whitetxt" />
+              <Pagination.Item className="bggreen whitetxt" active>
+                {1}
+              </Pagination.Item>
+              <Pagination.Item className="bggreen whitetxt">2</Pagination.Item>
+              <Pagination.Item className="bggreen whitetxt">3</Pagination.Item>
+              <Pagination.Item className="bggreen whitetxt">4</Pagination.Item>
+              <Pagination.Item className="bggreen whitetxt">5</Pagination.Item>
+              <Pagination.Next className="bggreen whitetxt" />
+              <Pagination.Last className="bggreen whitetxt" />
+            </Pagination>
           </Col>
         </Row>
       </Container>
