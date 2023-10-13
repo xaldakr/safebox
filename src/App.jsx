@@ -9,12 +9,18 @@ import QuienesSomos from "./componentes/pages/quienessomos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
 
+import VistaPropiedad from "./componentes/pages/VistaPropiedad";
+import Ayuda from "./componentes/pages/ayuda";
+//import Contactanos from "./componentes/pages/ContactEXTRA";
+import Contacto from "./componentes/pages/ContactDatos";
+
+
 function App() {
   return (
     <div className="App">
       <Navbarra data={false} />
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={<Contacto />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
