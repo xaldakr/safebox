@@ -61,6 +61,15 @@ body {
 .naa {
   height: 9.5vh;
 }
+.pagination .page-item,
+.page-link {
+  background-color: #586f6b !important;
+  color: #cfc0bd !important;
+}
+span .page-link {
+  background-color: #cfc0bd;
+  color: #586f6b;
+}
 .grueso {
   border-width: 3px;
   color: black;
@@ -77,6 +86,16 @@ body {
   font-size: 6vh;
   color: #cfc0bd;
 }
+
+.imaginaimg {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.grandtxt0 {
+  font-size: 8vh;
+  color: #cfc0bd;
+}
 .navaitem img {
   height: 7vh;
 }
@@ -87,7 +106,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 .spacecontrol {
-  height: 90vh;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 .whitetxt {
   color: #cfc0bd;
@@ -95,3 +116,244 @@ body {
 .grandtxt2 {
   font-size: 3vw;
 }
+
+
+.conocenos-page {
+  padding-top: 150px;
+  background-color: #586f6b;
+  /* Otros estilos específicos para esta página, si los necesitas */
+}
+
+.conocenos-content {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en una columna */
+  padding: 20px;
+  color: #cfc0bd;
+}
+
+.parrafos-imagen-container {
+  display: flex;
+  justify-content: space-between; /* Esto coloca los elementos a los lados */
+  align-items: center; /* Esto los alinea verticalmente al centro */
+}
+
+.parrafos-container {
+  flex: 1;
+  color: #cfc0bd;
+}
+
+.imagen-container {
+  flex: 1; /* Ocupa el espacio disponible para la imagen */
+  text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.imagen-container img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  width: 440px; /* Establece un ancho específico para la imagen */
+  height: auto; /* Mantiene la relación de aspecto original */
+}
+
+.parrafo {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+
+  padding-left: 65px;
+  padding-top: 25px;
+}
+.icono {
+  float: left;
+  margin-right: 35px;
+}
+
+.carda {
+  height: 40%;
+}
+.stick {
+  overflow-y: auto;
+}
+.noy {
+  overflow-y: hidden;
+}
+.nox {
+  overflow-x: hidden;
+}
+.nobg {
+  background-color: #00000000;
+}
+
+/* Fernando Tal*/
+.fondoayuda {
+  display: flex;
+  background-color: #2a605a;
+  min-height: 100vh;
+  color: #cfc0bd;
+}
+.fondo {
+  display: flex;
+  background-image: url("./multimedia/images/estaticos/must/login.png");
+  background-size: cover; /* Esto ajustará la imagen al tamaño del contenedor */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Esto ajustará la altura del contenedor al 100% del viewport */
+}
+.cardo .card {
+  background-color: rgb(0, 0, 0, 0);
+}
+.cardo .card-body {
+  z-index: 1;
+  background-color: rgb(88, 111, 107, 0.8);
+  color: #cfc0bd;
+}
+
+.bototo {
+  background-color: #cfc0bd;
+  color: #2a605a;
+}
+.cardo .card-body input {
+  background-color: #2a605a;
+}
+
+.cardo .card-body input::placeholder {
+  color: #cfc0bd;
+}
+
+.lost {
+  color: aliceblue;
+}
+.fondocontener {
+  background-color: rgb(88, 111, 107, 0.8);
+
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+  color: #cfc0bd;
+}
+.btn {
+  background-color: #cfc0bd;
+  color: #2a605a;
+  outline: #2a605a;
+}
+
+.inputverde {
+  background-color: #2a605a;
+  color: #cfc0bd;
+}
+/*Quienes Somos*/
+.quienes-somos-page {
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.quienes-somos-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+  z-index: 1;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.quienes-somos-content {
+  max-width: 950px;
+  margin: 10%;
+  padding: 20px;
+  text-align: left;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  position: relative;
+  z-index: 1;
+}
+
+.contactar-button {
+  float: left;
+  background-color: #2a605a;
+  color: #cfc0bd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contactar-button:hover {
+  background-color: #065037;
+}
+
+.h77 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  background-color: #cfc0bd;
+  color: #2a605a;
+  outline: #2a605a;
+}
+
+.inputverde {
+  background-color: #2a605a;
+  color: #cfc0bd;
+}
+
+/*Xavier*/
+.btexplore {
+  left: 1vw;
+  top: 11vh;
+  position: fixed;
+}
+
+.parrafoq {
+  font-size: 20px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 65px;
+  padding-top: 25px;
+  color: #ffffff;
+}
+/*CSS DE CONTACTDek*/
+.contiContact {
+  margin-top: 10%;
+}
+.fondoContactd {
+  background-image: url("./multimedia/images/estaticos/general/ContactDek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.DifuminadoContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 111, 107, 0.8);
+  color: #cfc0bd;
+}
+
+/*CSS DATOSCONTACT*/
+.ContactFd {
+  background-image: url("./multimedia/images/estaticos/general/ContactDek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.contenedorzx {
+  background-color: #586f6b;
+  color: #cfc0bd;
+}
+

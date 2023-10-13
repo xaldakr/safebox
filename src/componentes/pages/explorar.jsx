@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { CartaPropi } from "../secciones/cartapropi";
 import Pagination from "react-bootstrap/Pagination";
@@ -9,6 +10,7 @@ import {
   Form,
   FloatingLabel,
   Row,
+  Offcanvas,
 } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,25 +22,38 @@ import {
 import * as datos from "../secciones/staticdata";
 
 export const Explorar = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div className=" nox">
       <div className="naa"></div>
-      <div className="spacecontrol">
+      <div className="">
         <Row>
           {/*Zona de Controles*/}
-          <Col md={4} xl={3} className="bgmoss ">
+          <Offcanvas
+            show={show}
+            onHide={handleClose}
+            className="bgmoss px-3 whitetxt spacecontrol"
+          >
             <br />
             <Row className="">
-              <Col md={8} xl={9}>
+              <Col md={8} xl={9} xs={7}>
                 <h1 className="grandtxt titulo text-black text-start ps-3">
                   Buscar{" "}
                 </h1>
               </Col>
-              <Col md={4} xl={3} className=" justify-content-end pe-3">
-                <Button className="bgmoss btn-outline-success text-end w-100 h-100">
+              <Col
+                md={4}
+                xl={3}
+                xs={5}
+                className=" justify-content-end pe-3 align-items-end"
+              >
+                <Button className="bgmoss btn-outline-success text-center ms-auto h-100">
                   <FontAwesomeIcon
                     icon={faSearch}
-                    className="whitetxt text-end grandtxt2 text-black"
+                    className="whitetxt text-end grandtxt text-black"
                   />
                 </Button>
               </Col>
@@ -222,35 +237,53 @@ export const Explorar = () => {
                 <option value="11">Patios ↓</option>
               </Form.Select>
             </Form>
-          </Col>
+            <br />
+          </Offcanvas>
           {/*Zona de Publicaciones*/}
-          <Col md={8} xl={9} className="bglime stick">
+          <Col className="bglime stick">
             <br />
-            <div className="carda">
-              <CartaPropi data={datos.publi1} />
-            </div>
-            <br />
-            <div className="carda">
-              <CartaPropi data={datos.publi2} />
-            </div>
-            <br />
-            <Pagination className="w-100 justify-content-center">
-              <Pagination.First />
-              <Pagination.Prev />
-              <Pagination.Item>{1}</Pagination.Item>
-              <Pagination.Ellipsis />
-
-              <Pagination.Item>{10}</Pagination.Item>
-              <Pagination.Item>{11}</Pagination.Item>
-              <Pagination.Item active>{12}</Pagination.Item>
-              <Pagination.Item>{13}</Pagination.Item>
-              <Pagination.Item disabled>{14}</Pagination.Item>
-
-              <Pagination.Ellipsis />
-              <Pagination.Item>{20}</Pagination.Item>
-              <Pagination.Next />
-              <Pagination.Last />
-            </Pagination>
+            <Button
+              className=" position-fixed btexplore z-1"
+              variant="sucess"
+              onClick={handleShow}
+            >
+              <FontAwesomeIcon
+                icon={faSearch}
+                className="whitetxt text-end grandtxt2 text-black"
+              />
+            </Button>
+            <Container>
+              <br />
+              <div className="carda">
+                <CartaPropi data={datos.publi1} />
+              </div>
+              <br />
+              <div className="carda">
+                <CartaPropi data={datos.publi2} />
+              </div>
+              <br />
+              <Pagination className="w-100 justify-content-center " size="md">
+                <Pagination.First className="bggreen whitetxt" />
+                <Pagination.Prev className="bggreen whitetxt" />
+                <Pagination.Item className="bggreen whitetxt" active>
+                  {1}
+                </Pagination.Item>
+                <Pagination.Item className="bggreen whitetxt">
+                  2
+                </Pagination.Item>
+                <Pagination.Item className="bggreen whitetxt">
+                  3
+                </Pagination.Item>
+                <Pagination.Item className="bggreen whitetxt">
+                  4
+                </Pagination.Item>
+                <Pagination.Item className="bggreen whitetxt">
+                  5
+                </Pagination.Item>
+                <Pagination.Next className="bggreen whitetxt" />
+                <Pagination.Last className="bggreen whitetxt" />
+              </Pagination>
+            </Container>
           </Col>
         </Row>
       </div>
