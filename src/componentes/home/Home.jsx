@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
 import "./Home.css";
-import Carta from './Carta';
+import Carta from "./Carta";
 import img1 from "./media/casa1.jpg";
 import img2 from "./media/casa2.jpg";
+import Conocenos from "../pages/conocenos";
 import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="bgwhite">
@@ -80,8 +82,8 @@ function Home() {
             <Carousel>
               <Carousel.Item>
                 <Row>
-                 {/* Primera instancia de Carta */}
-                 <Col md={6}>
+                  {/* Primera instancia de Carta */}
+                  <Col md={6}>
                     <Carta />
                   </Col>
                   {/* Segunda instancia de Carta */}
@@ -93,6 +95,9 @@ function Home() {
               </Carousel.Item>
             </Carousel>
           </Col>
+        </Row>
+        <Row>
+          <Conocenos />
         </Row>
       </Container>
     </div>
