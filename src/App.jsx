@@ -5,6 +5,7 @@ import Login from "./componentes/pages/login";
 import Signup from "./componentes/pages/singup";
 import Navbarra from "./componentes/secciones/Navbarra";
 import Home from "./componentes/home/Home";
+import Conocenos from "./componentes/pages/conocenos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
 import VistaPropiedad from "./componentes/pages/VistaPropiedad";
