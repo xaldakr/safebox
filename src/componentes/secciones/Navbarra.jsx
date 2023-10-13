@@ -96,7 +96,7 @@ function Navbarra(props) {
                       <FontAwesomeIcon icon={faBell} />
                     </h2>
                   </Nav.Link>
-                  <Nav.Link as={Link} to="properties" className="d-inline">
+                  <Nav.Link as={Link} to="Notificaciones" className="d-inline">
                     <h2 className="d-inline mx-2 mt-auto normaltxt whitetxt">
                       <FontAwesomeIcon icon={faCalendar} />
                     </h2>

@@ -13,14 +13,18 @@ import VistaPropiedad from "./componentes/pages/VistaPropiedad";
 import Ayuda from "./componentes/pages/ayuda";
 //import Contactanos from "./componentes/pages/ContactEXTRA";
 import Contacto from "./componentes/pages/ContactDatos";
+import Notificaciones from "./componentes/pages/Notificaciones";
+//Notificaciones
 
 function App() {
   return (
     <div className="App">
-      <Navbarra data={false} />
+      <Navbarra data={true} />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="Notificaciones" element={<Notificaciones />} />
         <Route path="login" element={<Login />} />
+
         <Route path="explore" element={<Explorar />} />
         <Route path="ContactDatos" element={<Contacto />} />
         <Route path="register" element={<Signup />} />
