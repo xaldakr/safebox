@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../style/login.css";
 import { Link } from "react-router-dom";
-import Form from "react-bootstrap/Form";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

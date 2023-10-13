@@ -14,6 +14,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: #586f6b;
 }
 .App-header {
   background-color: #282c34;
@@ -115,6 +116,7 @@ span .page-link {
 .grandtxt2 {
   font-size: 3vw;
 }
+
 
 .conocenos-page {
   padding-top: 150px;
@@ -279,7 +281,7 @@ span .page-link {
   margin: 10%;
   padding: 20px;
   text-align: left;
-  padding-top: 1%;
+  padding-top: 3%;
   padding-bottom: 1%;
   position: relative;
   z-index: 1;
@@ -330,3 +332,36 @@ span .page-link {
   padding-top: 25px;
   color: #ffffff;
 }
+/*CSS DE CONTACTDek*/
+.contiContact {
+  margin-top: 10%;
+}
+.fondoContactd {
+  background-image: url("./multimedia/images/estaticos/general/ContactDek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.DifuminadoContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 111, 107, 0.8);
+  color: #cfc0bd;
+}
+
+/*CSS DATOSCONTACT*/
+.ContactFd {
+  background-image: url("./multimedia/images/estaticos/general/ContactDek.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.contenedorzx {
+  background-color: #586f6b;
+  color: #cfc0bd;
+}
+
