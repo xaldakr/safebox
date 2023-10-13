@@ -12,6 +12,7 @@ import CustomFooter from "./componentes/home/footer";
 import EditarPerfil from "./componentes/pages/EditarPerfil";
 import VistaPropiedad from "./componentes/pages/VistaPropiedad";
 import Ayuda from "./componentes/pages/ayuda";
+import EditarPropiedad from "./componentes/pages/EditarPropiedad";
 //import Contactanos from "./componentes/pages/ContactEXTRA";
 import Contacto from "./componentes/pages/ContactDatos";
 
@@ -26,7 +27,7 @@ function App() {
         <Route path="/" exact element={<Ayuda />} />
 
         <Route path="notif" element={<Notificaciones />} />
-
+        <Route path="edit" element={<EditarPropiedad />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="Ayuda" element={<Ayuda />} />
         <Route path="login" element={<Login />} />
