@@ -60,6 +60,15 @@ body {
 .naa {
   height: 9.5vh;
 }
+.pagination .page-item,
+.page-link {
+  background-color: #586f6b !important;
+  color: #cfc0bd !important;
+}
+span .page-link {
+  background-color: #cfc0bd;
+  color: #586f6b;
+}
 .grueso {
   border-width: 3px;
   color: black;
@@ -76,6 +85,16 @@ body {
   font-size: 6vh;
   color: #cfc0bd;
 }
+
+.imaginaimg {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.grandtxt0 {
+  font-size: 8vh;
+  color: #cfc0bd;
+}
 .navaitem img {
   height: 7vh;
 }
@@ -86,7 +105,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 .spacecontrol {
-  height: 90vh;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 .whitetxt {
   color: #cfc0bd;
@@ -131,15 +152,18 @@ body {
 }
 
 .parrafo {
-  font-size: 25px; /* Tamaño de fuente más pequeño */
-  text-align: center; /* Centrar el texto en el párrafo */
+  font-size: 25px;
+  text-align: center;
   margin: 0 auto;
+
+
   padding-left: 65px;
-  padding-top: 25px; /* Margen centrado horizontalmente */
+  padding-top: 25px;
+
 }
 .icono {
   float: left;
-  margin-right: 35px; /* Ajusta el margen derecho según tus preferencias */
+  margin-right: 35px;
 }
 
 .carda {
@@ -163,17 +187,6 @@ body {
   display: flex;
   background-color: #2a605a;
   min-height: 100vh;
-  color: #cfc0bd;
-}
-.acortitulo {
-  margin-top: 15%;
-}
-
-.mi-header {
-  background-color: #2a605a;
-}
-.mi-accordion .mi-body {
-  background-color: #2a605a;
   color: #cfc0bd;
 }
 .fondo {
@@ -226,6 +239,91 @@ body {
   background-color: #2a605a;
   color: #cfc0bd;
 }
+/*Quienes Somos*/
+.quienes-somos-page {
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.quienes-somos-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+  z-index: 1;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.quienes-somos-content {
+  max-width: 950px;
+  margin: 10%;
+  padding: 20px;
+  text-align: left;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  position: relative;
+  z-index: 1;
+}
+
+.contactar-button {
+  float: left;
+  background-color: #2a605a;
+  color: #cfc0bd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contactar-button:hover {
+  background-color: #065037;
+}
+
+.h77 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  background-color: #cfc0bd;
+  color: #2a605a;
+  outline: #2a605a;
+}
+
+.inputverde {
+  background-color: #2a605a;
+  color: #cfc0bd;
+}
+
+/*Xavier*/
+.btexplore {
+  left: 1vw;
+  top: 11vh;
+  position: fixed;
+}
+
+
+.parrafoq {
+  font-size: 20px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 65px;
+  padding-top: 25px;
+  color: #ffffff;
 
 /*CSS DE CONTACTDek*/
 .contiContact {
@@ -257,5 +355,5 @@ body {
 }
 .contenedorzx {
   background-color: #586f6b;
-  color: #cfc0bd;
+
 }
