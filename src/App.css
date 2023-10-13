@@ -109,3 +109,72 @@ body {
 .nobg {
   background-color: #00000000;
 }
+
+/* Fernando Tal*/
+.fondoayuda {
+  display: flex;
+  background-color: #2a605a;
+  min-height: 100vh;
+  color: #cfc0bd;
+}
+.acortitulo {
+  margin-top: 15%;
+}
+
+.mi-header {
+  background-color: #2a605a;
+}
+.mi-accordion .mi-body {
+  background-color: #2a605a;
+  color: #cfc0bd;
+}
+.fondo {
+  display: flex;
+  background-image: url("./multimedia/images/estaticos/must/login.png");
+  background-size: cover; /* Esto ajustará la imagen al tamaño del contenedor */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Esto ajustará la altura del contenedor al 100% del viewport */
+}
+.cardo .card {
+  background-color: rgb(0, 0, 0, 0);
+}
+.cardo .card-body {
+  z-index: 1;
+  background-color: rgb(88, 111, 107, 0.8);
+  color: #cfc0bd;
+}
+
+.bototo {
+  background-color: #cfc0bd;
+  color: #2a605a;
+}
+.cardo .card-body input {
+  background-color: #2a605a;
+}
+
+.cardo .card-body input::placeholder {
+  color: #cfc0bd;
+}
+
+.lost {
+  color: aliceblue;
+}
+.fondocontener {
+  background-color: rgb(88, 111, 107, 0.8);
+
+  margin-top: 20%;
+  margin-bottom: 20%;
+
+  color: #cfc0bd;
+}
+.btn {
+  background-color: #cfc0bd;
+  color: #2a605a;
+  outline: #2a605a;
+}
+
+.inputverde {
+  background-color: #2a605a;
+  color: #cfc0bd;
+}

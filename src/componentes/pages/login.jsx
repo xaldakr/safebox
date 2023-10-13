@@ -66,7 +66,10 @@ const Login = () => {
                       </Link>
                     </div>
                     <Link to="../publish">
-                      <button type="submit" className="btn btn-success w-100">
+                      <button
+                        type="submit"
+                        className="bototo btn btn-success w-100 "
+                      >
                         <strong>Iniciar sesión</strong>
                       </button>
                     </Link>

@@ -3,10 +3,10 @@ import Accordion from "react-bootstrap/Accordion";
 import "../../style/ayuda.css";
 const Ayuda = () => {
   return (
-    <div className="fondo">
+    <div className="fondoayuda">
       <div className="container mt-5">
         <div className="accordion" id="faqAccordion">
-          <h1>Preguntas Frecuentes</h1>
+          <h1 className="acortitulo">Preguntas Frecuentes</h1>
           <Accordion defaultActiveKey="0" className="mi-accordion">
             {/* Pregunta 1 */}
             <Accordion.Item className="itemc" eventKey="0">
