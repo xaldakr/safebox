@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <Navbarra data={true} />
       <Routes>
-        <Route path="/" exact element={<Ayuda />} />
+        <Route path="/" exact element={<Home />} />
 
         <Route path="notif" element={<Notificaciones />} />
         <Route path="edit" element={<EditarPropiedad />} />
