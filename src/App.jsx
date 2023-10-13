@@ -20,7 +20,6 @@ function App() {
     <div className="App">
       <Navbarra data={true} />
       <Routes>
-
         <Route path="/" exact element={<Home />} />
         <Route path="explore" element={<Explorar />} />
         <Route path="login" element={<Login />} />
@@ -29,6 +28,7 @@ function App() {
         <Route path="quienes" element={<QuienesSomos />} />
         <Route path="contactar" element={<Contacto />} />
         <Route path="verprop" element={<VistaPropiedad />} />
+        <Route path="agendar" element={<Agenda />} />
         <Route path="properties" element={<EditarPerfil />} />
       </Routes>
       <CustomFooter />

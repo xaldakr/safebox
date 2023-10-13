@@ -83,7 +83,7 @@ export const VistaPropiedad = () => {
                 <br />
                 <h4>
                   <Link
-                    to={"agendar"}
+                    to="../agendar"
                     style={styledButton}
                     className="mt-5 mb-5 w-75 "
                   >
