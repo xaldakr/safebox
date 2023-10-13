@@ -60,6 +60,15 @@ body {
 .naa {
   height: 9.5vh;
 }
+.pagination .page-item,
+.page-link {
+  background-color: #586f6b !important;
+  color: #cfc0bd !important;
+}
+span .page-link {
+  background-color: #cfc0bd;
+  color: #586f6b;
+}
 .grueso {
   border-width: 3px;
   color: black;
@@ -76,6 +85,16 @@ body {
   font-size: 6vh;
   color: #cfc0bd;
 }
+
+.imaginaimg {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.grandtxt0 {
+  font-size: 8vh;
+  color: #cfc0bd;
+}
 .navaitem img {
   height: 7vh;
 }
@@ -86,7 +105,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 .spacecontrol {
-  height: 90vh;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 .whitetxt {
   color: #cfc0bd;
@@ -95,10 +116,9 @@ body {
   font-size: 3vw;
 }
 
-
 .conocenos-page {
   padding-top: 150px;
-  background-color: #586F6B;
+  background-color: #586f6b;
   /* Otros estilos específicos para esta página, si los necesitas */
 }
 
@@ -135,14 +155,15 @@ body {
   font-size: 25px; 
   text-align: center; 
   margin: 0 auto;
+
   padding-left: 65px; 
   padding-top: 25px;
+
 }
 .icono {
   float: left;
   margin-right: 35px; 
 }
-
 
 .carda {
   height: 40%;
@@ -159,6 +180,14 @@ body {
 .nobg {
   background-color: #00000000;
 }
+
+
+/* Fernando Tal*/
+.fondoayuda {
+  display: flex;
+  background-color: #2a605a;
+  min-height: 100vh;
+  color: #cfc0bd;
 
 /*Quienes Somos*/
 .quienes-somos-page {
@@ -178,6 +207,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
   z-index: 1;
+
 }
 .video-bg {
   position: absolute;
@@ -220,6 +250,25 @@ h77 {
   font-family: Arial, sans-serif;
 
 }
+
+.btn {
+  background-color: #cfc0bd;
+  color: #2a605a;
+  outline: #2a605a;
+}
+
+.inputverde {
+  background-color: #2a605a;
+  color: #cfc0bd;
+}
+
+/*Xavier*/
+.btexplore {
+  left: 1vw;
+  top: 11vh;
+  position: fixed;
+}
+
 .parrafoq {
   font-size: 20px; 
   text-align: left; 
@@ -228,3 +277,4 @@ h77 {
   padding-top: 25px;
   color: #ffffff;
 }
+
