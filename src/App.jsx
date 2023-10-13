@@ -8,6 +8,7 @@ import Home from "./componentes/home/Home";
 import Conocenos from "./componentes/pages/conocenos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
+import VistaPropiedad from "./componentes/pages/VistaPropiedad";
 import Ayuda from "./componentes/pages/ayuda";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Signup />} />
         <Route path="publish" element={<PublicarPropiedad />} />
+        <Route path="verprop" element={<VistaPropiedad />} />
       </Routes>
       <CustomFooter />
     </div>
