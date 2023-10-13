@@ -1,42 +1,38 @@
 /* Estilos CSS en Home.css */
 .carousel-fullwidth {
-  max-height: 775px !important; 
-  overflow: hidden; 
+  max-height: 775px !important;
+  overflow: hidden;
 }
 
 .carousel-fullwidth .carousel-inner {
-  max-height: 100% !important; 
+  max-height: 100% !important;
 }
 
 .carousel-fullwidth img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
 
 .split-content {
-  background-color: #586F6B; 
+  background-color: #586f6b;
   padding: 10px;
 }
 
 .split-content h1 {
   text-align: center;
-  margin-top: 170px; 
+  margin-top: 170px;
 }
 
 .search-box {
-  text-align: center; 
-  margin-top: 20px; 
+  text-align: center;
+  margin-top: 20px;
 }
 
-.btn {
-  margin-top: 3%;
-  width: 20%; 
-}
 .custom-input-small {
-  width: 60%; 
-  padding: 5px; 
-  font-size: 12px; 
-  background-color: #B8B8AA; 
+  width: 60%;
+  padding: 5px;
+  font-size: 12px;
+  background-color: #b8b8aa;
 }
 /*cards*/
 /* Estilos CSS en Home.css */
@@ -46,8 +42,8 @@
 }
 
 .custom-button {
-  background-color: #CFC0BD !important;
-  color: #586F6B !important;
+  background-color: #cfc0bd !important;
+  color: #586f6b !important;
   border: none !important;
   width: 100%;
 }
@@ -72,14 +68,10 @@
   display: none !important;
 }
 .custom-ver-button {
-  background-color: #FF0000; /* Cambia este valor al color que desees */
-  color: #FFFFFF; /* Color del texto */
+  background-color: #ff0000; /* Cambia este valor al color que desees */
+  color: #ffffff; /* Color del texto */
 }
 .custom-h1 {
-  color: #EBEBEB; 
+  color: #ebebeb;
 }
 
-
-
-
-  

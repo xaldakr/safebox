@@ -8,6 +8,7 @@ import Home from "./componentes/home/Home";
 import Conocenos from "./componentes/pages/conocenos";
 import PublicarPropiedad from "./componentes/pages/PublicarPropiedad";
 import CustomFooter from "./componentes/home/footer";
+import Ayuda from "./componentes/pages/ayuda";
 
 function App() {
   return (
