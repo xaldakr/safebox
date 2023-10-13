@@ -29,9 +29,8 @@ function App() {
         <Route path="notif" element={<Notificaciones />} />
         <Route path="edit" element={<EditarPropiedad />} />
         <Route path="explore" element={<Explorar />} />
-
+        <Route path="Ayuda" element={<Ayuda />} />
         <Route path="login" element={<Login />} />
-
         <Route path="explore" element={<Explorar />} />
         <Route path="ContactDatos" element={<Contacto />} />
         <Route path="register" element={<Signup />} />
