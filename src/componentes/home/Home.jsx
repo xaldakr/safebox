@@ -3,7 +3,7 @@ import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
 import "./Home.css";
 import Carta from "./Carta";
 import img1 from "./media/casa1.jpg";
-import img2 from "./media/casa2.jpg";
+//import img2 from "./media/casa2.jpg";
 import Conocenos from "../pages/conocenos";
 import { Link } from "react-router-dom";
 
@@ -36,7 +36,7 @@ function Home() {
               <Carousel.Item>
                 <img
                   className="d-block w-100 position-relative"
-                  src={img2}
+                  src={img1}
                   alt="Segunda imagen"
                 />
                 <div className="carousel-caption-custom">
@@ -70,7 +70,7 @@ function Home() {
         <br />
         <Row className="mt-5">
           <Col>
-            <h1 className="custom-h1">AGREGADO RECIENTEMENTE</h1>
+            <h1 className="custom-h11">AGREGADO RECIENTEMENTE</h1>
             <Carousel controls={false}>
               <Carousel.Item>
                 <Row>
