@@ -477,3 +477,8 @@ span .page-link {
   background-color: #065037;
   color: #cfc0bd;
 }
+/*Bot*/
+.chatbot-container {
+  position: relative;
+  z-index: 5000;
+}

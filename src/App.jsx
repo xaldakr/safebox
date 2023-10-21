@@ -15,14 +15,15 @@ import Ayuda from "./componentes/pages/ayuda";
 import EditarPropiedad from "./componentes/pages/EditarPropiedad";
 //import Contactanos from "./componentes/pages/ContactEXTRA";
 import Contacto from "./componentes/pages/ContactDatos";
-
+import Contenido from "./componentes/Bot/contenido";
 import Notificaciones from "./componentes/pages/Notificaciones";
 //Notificaciones
 
 function App() {
   return (
     <div className="App">
-      <Navbarra data={true} />
+      <Navbarra data={false} />
+      <Contenido />
       <Routes>
         <Route path="/" exact element={<Home />} />
 
