@@ -17,16 +17,30 @@ const Registrarse = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Realizar acciones de registro aquí, como enviar datos al servidor
-    console.log("Datos del formulario:", {
-      nombres,
-      apellidos,
-      telefono,
-      correo,
-      fechaNacimiento,
-      contrasena,
-      imagenPerfil,
-    });
+    // Crear un objeto FormData con los datos del formulario
+    const formData = new FormData();
+    formData.append("nombres", nombres);
+    formData.append("apellidos", apellidos);
+    formData.append("telefono", telefono);
+    formData.append("correo", correo);
+    formData.append("fechaNacimiento", fechaNacimiento);
+    formData.append("contrasena", contrasena);
+    formData.append("imagenPerfil", imagenPerfil);
+
+    // Enviar la solicitud al servidor usando fetch
+    fetch("http://localhost:3001/register", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // Manejar la respuesta del servidor aquí
+        console.log(data);
+      })
+      .catch((error) => {
+        // Manejar el error aquí
+        console.error(error);
+      });
   };
 
   return (
