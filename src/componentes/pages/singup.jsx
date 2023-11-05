@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 import "../../style/registra.css";
 const Registrarse = () => {
   const [nombres, setNombres] = useState("");
@@ -8,6 +10,10 @@ const Registrarse = () => {
   const [fechaNacimiento, setFechaNacimiento] = useState("");
   const [contrasena, setContrasena] = useState("");
   const [imagenPerfil, setImagenPerfil] = useState(null);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+  const [registroExitoso, setRegistroExitoso] = useState(false);
+  const [errorRegistro, setErrorRegistro] = useState(false);
 
   const handleImagenPerfilChange = (e) => {
     // Manejar la carga de la imagen de perfil aquí
@@ -15,38 +21,60 @@ const Registrarse = () => {
     setImagenPerfil(imagen);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (
+      !nombres ||
+      !apellidos ||
+      !telefono ||
+      !correo ||
+      !fechaNacimiento ||
+      !contrasena
+    ) {
+      setErrorRegistro(true);
+      setRegistroExitoso(false);
+      return;
+    }
     // Crear un objeto FormData con los datos del formulario
-    const formData = new FormData();
-    formData.append("nombres", nombres);
-    formData.append("apellidos", apellidos);
-    formData.append("telefono", telefono);
-    formData.append("correo", correo);
-    formData.append("fechaNacimiento", fechaNacimiento);
-    formData.append("contrasena", contrasena);
-    formData.append("imagenPerfil", imagenPerfil);
+    const formData = {
+      nombres: nombres,
+      apellidos: apellidos,
+      telefono: telefono,
+      correo: correo,
+      fechaNacimiento: fechaNacimiento,
+      contrasena: contrasena,
+      imagenPerfil: imagenPerfil,
+    };
+    var url = "http://localhost:3001/signup";
 
-    // Enviar la solicitud al servidor usando fetch
-    fetch("http://localhost:3001/register", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Manejar la respuesta del servidor aquí
-        console.log(data);
-      })
-      .catch((error) => {
-        // Manejar el error aquí
-        console.error(error);
-      });
+    try {
+      const response = await axios.post(url, formData);
+      if (response.data.token) {
+        setRegistroExitoso(true);
+        navigate("/");
+      } else {
+        setError("Error no se puede crear el usuario");
+      }
+    } catch (error) {
+      console.log("ERROR", error);
+    }
   };
 
   return (
     <div className="fondo h-100">
       <div className="container ">
         <div className="row justify-content-center align-items-center no-margin fondocontener p-4">
+          {errorRegistro && (
+            <div className="alert alert-danger" role="alert">
+              No se pudo crear la cuenta. Por favor, completa todos los campos.
+            </div>
+          )}
+
+          {registroExitoso && (
+            <div className="alert alert-success" role="alert">
+              El registro se ha realizado correctamente.
+            </div>
+          )}
           <div className="col-md-4">
             {/* Contenido de la columna izquierda */}
             {/* ... */}

@@ -22,7 +22,7 @@ import Notificaciones from "./componentes/pages/Notificaciones";
 function App() {
   return (
     <div className="App">
-      <Navbarra data={false} />
+      <Navbarra data={true} />
       <Contenido />
       <Routes>
         <Route path="/" exact element={<Home />} />
